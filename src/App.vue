@@ -1,16 +1,18 @@
 
 <template>
- <LandingPage></LandingPage>
- <!-- <TattooPage></TattooPage> -->
+
+ <RouterView />
   
 </template>
 
 <script>
 import TattooPage from './components/Tattoo-page.vue';
 import LandingPage from "./components/LandingPage.vue";
+import Home from './components/Home.vue';
+
   export default {
     name: "App",
-    components: {TattooPage, LandingPage},
+    components: {Home},
   data() {
     return {
     }
