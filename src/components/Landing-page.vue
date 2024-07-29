@@ -2,13 +2,13 @@
   <div class="container">
     <div class="left-image">
       <img
-        src="components/images/landing-page/left-image.jpg"
+        src="./src/images/landing-page/left-image.jpg"
         alt="woman with tattooed arm"
       />
     </div>
     <div class="center-section">
       <img
-        src="components/images/lading-page-ilustracion.png"
+        src="./src/images/landing-page/ilustracion.png"
         alt="center illustration"
         class="logo"
       />
@@ -17,7 +17,7 @@
     </div>
     <div class="right-section">
       <img
-        src="components/images/landing-page/right-image.jpg"
+        src="./src/images/landing-page/right-image.jpg"
         alt="woman with several tattoos looking at camera"
       />
     </div>
