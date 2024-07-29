@@ -1,16 +1,16 @@
 
 <template>
- 
- <TattooPage></TattooPage>
+ <LandingPage></LandingPage>
+ <!-- <TattooPage></TattooPage> -->
   
 </template>
 
 <script>
 import TattooPage from './components/Tattoo-page.vue';
-
+import LandingPage from "./components/LandingPage.vue";
   export default {
     name: "App",
-    components: {TattooPage},
+    components: {TattooPage, LandingPage},
   data() {
     return {
     }
