@@ -8,7 +8,7 @@
     </div>
     <div class="center-section">
       <img
-        :src="require('@/images/landing-page/ilustracion.png')"
+        :src="require('@/src/images/landing-page/ilustracion.png')"
         alt="center illustration"
         class="logo"
       />
