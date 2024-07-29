@@ -1,6 +1,6 @@
 <template>
 
-<h1>HOME 1</h1>
+<h1>HOME 1 !!!</h1>
 <button>Submit</button>
 
 </template>
