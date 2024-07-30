@@ -14,13 +14,7 @@ import Home from "./components/Home.vue";
 export default {
   name: "App",
   components: { Home, TattooPage, LandingPage, TattooPage2 },
-export default {
-  name: "App",
-  components: { Home },
   data() {
-    return {};
-  },
-};
     return {};
   },
 };
