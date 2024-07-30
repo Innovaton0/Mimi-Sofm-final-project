@@ -1,7 +1,6 @@
 <template>
-
-  <h1>HOME</h1>
-  <button>Submit</button>
+  <h1 class="font-bold text-yellow-500">Home</h1>
+  <button class="bg-yellow-500">Submit</button>
   
   </template>
   
@@ -10,9 +9,7 @@
   export default {
     name: "home",
     data() {
-      return {
-  
-      }
+      return {}
   }
   }
   
