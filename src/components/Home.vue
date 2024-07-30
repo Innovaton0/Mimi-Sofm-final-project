@@ -14,57 +14,60 @@
 </section>
 
   <!-- FOTOS Y  FONDO BEIGE -->
-  <section class="bg-[#F9EEDF] h-[200px]">
-  <div class="border border-black p-5 flex justify-left items-center space-x-4">
-    <div>
-      <img
-        src="https://via.placeholder.com/150"
-        alt="Imagen Redonda"
-        class="w-20 h-20 rounded-full object-cover"
-      />
-    </div>
-    <div>
-      <img
-        src="https://via.placeholder.com/150"
-        alt="Imagen Redonda"
-        class="w-20 h-20 rounded-full object-cover"
-      />
-    </div>
-    <div>
-      <img
-        src="https://via.placeholder.com/150"
-        alt="Imagen Redonda"
-        class="w-20 h-20 rounded-full object-cover"
-      />
+  <section class="bg-[#F9EEDF] h-[200px] flex items-end">
+  <div class="border border-black p-5 flex justify-between w-full">
+    <div class="flex flex-col items-start space-y-4">
+      <div class="flex space-x-4">
+        <div>
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        </div>
+        <div>
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        </div>
+        <div>
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="flex space-x-4">
+        <div>
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        </div>
+        <div>
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        </div>
+        <div>
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="bg-[#F9EEDF] h-[200px]">
-  <div class="border border-black p-5 flex col-span-4 justify-end space-x-4">
-    <div>
-      <img
-        src="https://via.placeholder.com/150"
-        alt="Imagen Redonda"
-        class="w-20 h-20 rounded-full object-cover"
-      />
-    </div>
-    <div>
-      <img
-        src="https://via.placeholder.com/150"
-        alt="Imagen Redonda"
-        class="w-20 h-20 rounded-full object-cover"
-      />
-    </div>
-    <div>
-      <img
-        src="https://via.placeholder.com/150"
-        alt="Imagen Redonda"
-        class="w-20 h-20 rounded-full object-cover"
-      />
-    </div>
-  </div>
-</section>
+
 
 </header>
 
