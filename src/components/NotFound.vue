@@ -9,7 +9,7 @@
     <script>
     
       export default {
-        name: "NoutFound",
+        name: "NotFound",
         data() {
           return {};
         },
