@@ -4,7 +4,7 @@
 
   <!-- IMAGEN -->
 <section class="bg-[url('/src/assets/pexels-photo-955938.jpeg')] bg-cover h-[70vh]">
-  <h1 class="font-bold text-white text-center">acá va el navbar</h1>
+  <h1 class="font-bold text-white text-center">NAVBAR</h1>
 
   <!-- BOTONES -->
   <div class="flex justify-around items-center mt-[26rem] font-bold w-full">
