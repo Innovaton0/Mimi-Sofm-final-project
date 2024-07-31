@@ -1,5 +1,6 @@
 <template>
   <RouterView />
+
 </template>
 
 <script>
@@ -12,8 +13,8 @@ import ArtistProfile from "./components/ArtistProfile.vue";
 import JoinUs from './components/JoinUs.vue';
 import Register from './components/Register.vue';
 import Help from './components/Help.vue';
-import AboutUs from "./components/AboutUs.vue"
-import Footer from "./components/Footer.vue"
+import AboutUs from "./components/AboutUs.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
