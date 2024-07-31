@@ -11,8 +11,17 @@
 
     <!-- Center section -->
     <div class="bg-black h-screen col-start-2 col-end-3 row-start-1">
-      <h1 class="text-white">MEJORES TATUAJES & <br />TATUADORES DE BARCELONA</h1>
-      <a href="link?" target="_blank" class="home-link">Home</a>
+      <h1
+        class="text-[#F9EEDF] text-center flex justify-center items-center mt-96"
+      >
+        MEJORES TATUAJES & <br />TATUADORES DE BARCELONA
+      </h1>
+      <a
+        href="link?"
+        target="_blank"
+        class="text-[#F09235] font-thin flex justify-center m-11"
+        >home</a
+      >
     </div>
     <div
       class="flex justify-center items-center col-start-1 col-end-4 row-start-1"
