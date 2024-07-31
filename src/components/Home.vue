@@ -14,13 +14,13 @@
 </section>
 
   <!-- FOTOS Y  FONDO BEIGE -->
-  <section class="bg-[#F9EEDF] h-[200px] flex items-end">
+  <section class="bg-[#F9EEDF] h-[300px] flex items-end">
   <div class="border border-black p-5 flex justify-between w-full">
     <div class="flex flex-col items-start space-y-4">
       <div class="flex space-x-4">
         <div>
           <img
-            src="https://via.placeholder.com/150"
+            src="../src/assets/Tatuajes Home/pexels-photo-1433273.png"
             alt="Imagen Redonda"
             class="w-20 h-20 rounded-full object-cover"
           />
@@ -72,7 +72,7 @@
 </header>
 
 
-
+<!-- FOOTER -->
 <footer class="bg-[#8A312E] text-white p-20">
   <div class="flex gap-10 justify-between">
     <img src="/src/assets/logo_larama.png" alt="logo" class="h-36">
