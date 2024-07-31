@@ -7,57 +7,34 @@
   <h1 class="font-bold text-white text-center">acá va el navbar</h1>
 
   <!-- BOTONES -->
-  <div class="flex justify-center items-center gap-5 m-24 space-x-48 font-bold">
-    <button class="bg-[#F09235] rounded-md mt-80 py-5 px-10 text-white">TATUAJES</button>
-    <button class="bg-[#F09235] p-3 mt-80 py-5 px-10 rounded-md text-white">TATUADORES</button>
+  <div class="flex justify-around items-center mt-[26rem] font-bold w-full">
+    <button class="bg-[#F09235] rounded-md py-5 px-10 flex justify-center text-white">TATUAJES</button>
+    <button class="bg-[#F09235] p-3 py-5 px-10 rounded-md text-white">TATUADORES</button>
   </div>
 </section>
 
   <!-- FOTOS Y  FONDO BEIGE -->
-  <section class="bg-[#F9EEDF] h-[300px] flex items-end">
-  <div class="border border-black p-5 flex justify-between w-full">
-    <div class="flex flex-col items-start space-y-4">
-      <div class="flex space-x-4">
+  <section class="bg-[#F9EEDF] h-[200px] flex">
+  <div class="p-5 w-full">
+    <div class="flex m-10 justify-center">
+      <div class="flex space-x-12">
         <div>
           <img
-            src="../src/assets/Tatuajes Home/pexels-photo-1433273.png"
+            src="../assets/Tatuajes Home/pexels-photo-1433273.png"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          /> 
+        </div>
+        <div>
+          <img
+            src="../assets/Tatuajes Home/pexels-photo-2183131.png"
             alt="Imagen Redonda"
             class="w-20 h-20 rounded-full object-cover"
           />
         </div>
         <div>
           <img
-            src="https://via.placeholder.com/150"
-            alt="Imagen Redonda"
-            class="w-20 h-20 rounded-full object-cover"
-          />
-        </div>
-        <div>
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Imagen Redonda"
-            class="w-20 h-20 rounded-full object-cover"
-          />
-        </div>
-      </div>
-      <div class="flex space-x-4">
-        <div>
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Imagen Redonda"
-            class="w-20 h-20 rounded-full object-cover"
-          />
-        </div>
-        <div>
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Imagen Redonda"
-            class="w-20 h-20 rounded-full object-cover"
-          />
-        </div>
-        <div>
-          <img
-            src="https://via.placeholder.com/150"
+            src="../assets/Tatuajes Home/pexels-photo-6153346.png"
             alt="Imagen Redonda"
             class="w-20 h-20 rounded-full object-cover"
           />
@@ -65,6 +42,37 @@
       </div>
     </div>
   </div>
+
+
+
+  <div class= "p-5 w-full">
+    <div class="flex m-10 justify-center">
+      <div class="flex space-x-12">
+        <div>
+          <img
+            src="../assets/Tatuadores Home/pexels-photo-1803880.png"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          /> 
+        </div>
+        <div>
+          <img
+            src="../assets/Tatuadores Home/pexels-photo-7005727.png"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        </div>
+        <div>
+          <img
+            src="../assets/Tatuadores Home/pexels-photo-7147772.png"
+            alt="Imagen Redonda"
+            class="w-20 h-20 rounded-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 
