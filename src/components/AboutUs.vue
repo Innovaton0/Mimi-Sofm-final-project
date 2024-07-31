@@ -56,8 +56,8 @@
 </div>
 
 
-<div class="justify-center items-center">
-    <p class="border border-black mt-10 from-neutral-400 text-center font-light"> Nos conocimos en un bootcamp de FrontEnd en CodeOp en Barcelona, unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis </p>
+<div class="justify-center items-center mx-24">
+    <p class="mt-10 from-neutral-400 text-center font-light"> Nos conocimos en un bootcamp de FrontEnd en CodeOp en Barcelona, unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis </p>
   </div>
 
   <p class="font-bold underline decoration-[rgb(240,146,53)] decoration-[6px] text-2xl m-10">CONTACTO</p>
