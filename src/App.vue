@@ -13,10 +13,11 @@ import JoinUs from './components/JoinUs.vue';
 import Register from './components/Register.vue';
 import Help from './components/Help.vue';
 import AboutUs from "./components/AboutUs.vue"
+import Footer from "./components/Footer.vue"
 
 export default {
   name: "App",
-  components: { Home, TattooPage, LandingPage, TattooPage2, TattooArtists, ArtistProfile, JoinUs, Register, Help, AboutUs },
+  components: { Home, TattooPage, LandingPage, TattooPage2, TattooArtists, ArtistProfile, JoinUs, Register, Help, AboutUs, Footer },
   data() {
     return {};
   },
