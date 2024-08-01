@@ -10,14 +10,16 @@
     </div>
 
     <!-- Center section -->
-    <div class="bg-black h-screen col-start-2 col-end-3 row-start-1 font-mont">
-      <!-- <img
-        class="flex justify-center items-center h-32 w-32 mb-0"
-        src="../images/landing-page/logo_larama.png"
-        alt="Logo de texto circular La Rama" -->
+    <div
+      class="bg-black h-screen col-start-2 col-end-3 row-start-1 font-mont flex flex-col justify-center items-center"
+    >
+      <img
+        class="h-32 w-32 mb-0 mt-20"
+        src="../images/landing-page/logo_larama_beige.png"
+        alt="Logo de texto circular La Rama"
       />
       <h1
-        class="text-[#F9EEDF] text-center flex justify-center items-center mt-96"
+        class="text-[#F9EEDF] text-center flex justify-center items-center mt-60"
       >
         MEJORES TATUAJES & <br />TATUADORES DE BARCELONA
       </h1>
