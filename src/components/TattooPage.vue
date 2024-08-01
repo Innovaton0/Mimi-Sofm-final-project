@@ -9,7 +9,7 @@
     <div class="grid-cols-5">
 
       <!-- JAPONES -->
-       <div></div>
+       <div class="col-start-1 col-end2 border border-black"></div>
 
     </div>
 
