@@ -8,7 +8,6 @@
         alt="woman with tattooed arm"
       />
     </div>
-
     <!-- Center section -->
     <div
       class="bg-black h-screen col-start-2 col-end-3 row-start-1 font-mont flex flex-col justify-center items-center"
@@ -27,10 +26,11 @@
       <a
         href="link?"
         target="_blank"
-        class="text-[#F09235] font-thin flex justify-center m-11 border-b border-[#F09235]/100 border-b-4 border-solid pb-0 text-center"
+        class="text-[#F09235] font-thin flex justify-center m-11 border-[#F09235]/100 border-b-4 border-solid pb-0 text-center"
         >home</a
       >
     </div>
+    <!-- Overlapping Center Image -->
     <div
       class="flex justify-center items-center col-start-1 col-end-4 row-start-1"
     >
@@ -40,7 +40,6 @@
         alt="center illustration"
       />
     </div>
-
     <!-- Right section -->
     <div class="col-start-3 col-end-4 row-start-1">
       <img
