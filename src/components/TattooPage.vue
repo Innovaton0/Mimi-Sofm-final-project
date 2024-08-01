@@ -1,8 +1,22 @@
 <template>
     <label for=""></label>
     <input type="text" />
-    <h1>Tattoo Page</h1>
-    <button>Submit</button>
+
+  <body class="bg-[#FCEDDE] h-screen font-m">
+
+  <!-- Aquí va navbar -->
+
+    <div class="grid-cols-5">
+
+      <!-- JAPONES -->
+       <div></div>
+
+    </div>
+
+  </body>
+  <!-- <footer> </footer> -->
+    
+
   </template>
   
   <script>
