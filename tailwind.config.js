@@ -5,7 +5,8 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {  fontFamily: {
+    extend: {  
+      fontFamily: {
       mont: ['"Montserrat"'],
     },
   },
