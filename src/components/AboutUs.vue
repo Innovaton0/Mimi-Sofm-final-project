@@ -58,10 +58,13 @@
     <p class="mt-10 from-neutral-400 text-center font-light"> Nos conocimos en un bootcamp de FrontEnd en CodeOp en Barcelona, unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis </p>
   </div>
 
+  <!-- CONTACTO -->
   <p class="font-bold underline decoration-[rgb(240,146,53)] decoration-[6px] text-2xl m-10">CONTACTO</p>
 
-  <div class="mt-9 p-7 rounded-lg shadow-md">
-        <h2 class="text-lg font-bold m-4 text-left">¡Hablemos!</h2>
+  
+  <div class="border border-black mt-9 p-7 flex rounded-lg shadow-md">
+    <div class="border border-black flex flex-col">
+    <h2 class="text-lg font-bold m-4 text-left">¡Hablemos!</h2>
         <form>
 
             <!-- Campo de nombre -->
@@ -97,7 +100,7 @@
             <!-- Botón de envío -->
             <div class="mt-6">
                 <button type="submit"
-                    class=" bg-[#F09235] text-white font-bold py-2 px-4 rounded-lg text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:ring-offset-2 focus:ring-offset-white">
+                    class=" bg-[#F09235] text-white font-bold py-2 px-4 w-[500px] rounded-lg text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:ring-offset-2 focus:ring-offset-white">
                     Enviar
                 </button>
             </div>
@@ -105,6 +108,25 @@
         </form>
     </div>
 
+
+    <div class="border border-black flex flex-col">
+      <p class="font-bold mt-16 text-sm px-12">Correo:</p>
+      <p class="font-bold text-sm px-12">hola@larama.tattoo</p>
+      <p class="font-bold mt-6 text-sm px-12">Ubicación:</p>
+
+      <div class="flex flex-col gap-5 items-center">
+    <img
+      src="../assets/Nosotros/Captura de pantalla 2024-07-25 a la(s) 17.19.20.png"
+      alt="Mapa"
+    />
+    
+    
+     <p class="font-bold">NACHA</p>
+  </div>
+
+            
+    </div>
+  </div>
 </section>
 
 </template>
