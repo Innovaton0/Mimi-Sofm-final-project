@@ -1,6 +1,6 @@
 <template>
-
-<h1>ARTIST PROFILE</h1>
+ 
+<h1>hola ARTIST PROFILE</h1>
 
 <p>Aquí va el perfil individual de cada artista: foto de perfil, trabajos, RRSS, etc</p>
 
