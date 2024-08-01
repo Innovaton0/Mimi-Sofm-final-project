@@ -4,7 +4,7 @@
     <div class="col-start-1 col-end-2 row-start-1">
       <img
         class="h-screen"
-        src="../images/landing-page/left-image.jpg"
+        src="../assets/landing-page/left-image.jpg"
         alt="woman with tattooed arm"
       />
     </div>
@@ -15,7 +15,7 @@
     >
       <img
         class="h-32 w-32 mb-0 mt-20"
-        src="../images/landing-page/logo_larama_beige.png"
+        src="../assets/landing-page/logo_larama_beige.png"
         alt="Logo de texto circular La Rama"
       />
       <h1
@@ -36,7 +36,7 @@
     >
       <img
         class="w-[45rem] h-120 opacity-25"
-        src="../images/landing-page/ilustracion.png"
+        src="../assets/landing-page/ilustracion.png"
         alt="center illustration"
       />
     </div>
@@ -45,7 +45,7 @@
     <div class="col-start-3 col-end-4 row-start-1">
       <img
         class="h-screen"
-        src="../images/landing-page/right-image.jpg"
+        src="../assets/landing-page/right-image.jpg"
         alt="woman with several tattoos looking at camera"
       />
     </div>
