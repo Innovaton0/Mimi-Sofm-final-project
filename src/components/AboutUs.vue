@@ -62,8 +62,8 @@
   <p class="font-bold underline decoration-[rgb(240,146,53)] decoration-[6px] text-2xl m-10">CONTACTO</p>
 
   
-  <div class="border border-black mt-9 p-7 flex rounded-lg shadow-md">
-    <div class="border border-black flex flex-col">
+  <div class="mt-9 p-7 flex rounded-lg shadow-md">
+    <div class="flex flex-col">
     <h2 class="text-lg font-bold m-4 text-left">¡Hablemos!</h2>
         <form>
 
@@ -109,22 +109,19 @@
     </div>
 
 
-    <div class="border border-black flex flex-col">
+    <div class="flex flex-col">
       <p class="font-bold mt-16 text-sm px-12">Correo:</p>
       <p class="font-bold text-sm px-12">hola@larama.tattoo</p>
       <p class="font-bold mt-6 text-sm px-12">Ubicación:</p>
 
-      <div class="flex flex-col gap-5 items-center">
+      <div class="flex flex-col mt-10 px-20 w-[600px] items-center">
     <img
       src="../assets/Nosotros/Captura de pantalla 2024-07-25 a la(s) 17.19.20.png"
       alt="Mapa"
+      class="border-[10px] border-black "
     />
     
-    
-     <p class="font-bold">NACHA</p>
-  </div>
-
-            
+  </div>    
     </div>
   </div>
 </section>
