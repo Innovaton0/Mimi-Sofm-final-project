@@ -6,54 +6,52 @@
   <p class="font-bold underline decoration-[rgb(240,146,53)] decoration-[6px] text-2xl m-10">NOSOTROS</p>
 
   <div class="flex justify-center items-center space-x-20">
-   <!-- MATEUS -->
-    <img
+  
+    <!-- MATEUS -->
+   <div class="flex flex-col gap-5 items-center">
+   <img
       src="../assets/Nosotros/T06SBAM50LR-U070HGSUD0C-90cde90c6623-512.png"
       alt="Mateus"
       class="w-32 h-32 rounded-full object-cover"
-    />
+    /> 
+    
+    
+     <p class="font-bold">MATEUS</p>
+  </div>
 
-    <!-- MARIANTO -->
-    <img
+<!-- MARIANTO -->
+  <div class="flex flex-col gap-5 items-center">
+   <img
       src="../assets/Nosotros/T06SBAM50LR-U071B5MU0L8-f736a6aa7cee-512.jpg"
       alt="Marianto"
       class="w-32 h-32 rounded-full object-cover"
-    />
+    /> 
+    <p class="font-bold">MARIANTO</p>
+  </div>
 
-    <!-- INNO -->
+<!-- INNO -->
+  <div class="flex flex-col gap-5 items-center">
     <img
       src="../assets/Nosotros/innp.png"
       alt="Inno"
       class="w-32 h-32 rounded-full object-cover"
     />
+    
+     <p class="font-bold">INNO</p>
+  </div>
 
-    <!-- NACHA -->
+<!-- NACHA -->
+  <div class="flex flex-col gap-5 items-center">
     <img
       src="../assets/Nosotros/IMG_7723.png"
       alt="Nacha"
       class="w-32 h-32 rounded-full object-cover"
     />
-   
-  </div>
-
-
-<div class="flex justify-center space-x-40 mt-5">
-  <div>
-     <p class="font-bold">MATEUS</p>
-  </div>
-
-  <div>
-     <p class="font-bold">MARIANTO</p>
-  </div>
-
-  <div>
-     <p class="font-bold">INNO</p>
-  </div>
-
-  <div>
+    
+    
      <p class="font-bold">NACHA</p>
   </div>
-</div>
+  </div>
 
 
 <div class="justify-center items-center mx-24">
@@ -70,14 +68,14 @@
             <div class="mb-4">
                 <label for="name"</label>
                 <input type="text" id="name" name="name" placeholder="Nombre"
-                    class="px-4 py-2 mt-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:border-transparent" />
+                    class="px-4 w-[500px] py-2 mt-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:border-transparent" />
             </div>
 
             <!-- Campo de email -->
             <div class="mb-4">
                 <label for="email"</label>
                 <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com"
-                    class="px-4 py-2 mt-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:border-transparent" />
+                    class="px-4 w-[500px] py-2 mt-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:border-transparent" />
             </div>
 
 
@@ -85,7 +83,7 @@
             <div class="mb-4">
                 <label for="message"</label>
                 <textarea id="about" name="about" rows="4" placeholder="Mensaje"
-                    class="px-4 py-2 mt-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:border-transparent"></textarea>
+                    class="px-4 w-[500px] py-2 mt-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:border-transparent"></textarea>
             </div>
 
             <!-- Checkbox -->
