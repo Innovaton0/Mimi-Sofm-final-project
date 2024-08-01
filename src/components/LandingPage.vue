@@ -10,16 +10,22 @@
     </div>
 
     <!-- Center section -->
-    <div class="bg-black h-screen col-start-2 col-end-3 row-start-1">
+    <div class="bg-black h-screen col-start-2 col-end-3 row-start-1 font-mont">
+      <!-- <img
+        class="flex justify-center items-center h-32 w-32 mb-0"
+        src="../images/landing-page/logo_larama.png"
+        alt="Logo de texto circular La Rama" -->
+      />
       <h1
         class="text-[#F9EEDF] text-center flex justify-center items-center mt-96"
       >
         MEJORES TATUAJES & <br />TATUADORES DE BARCELONA
       </h1>
+      <!-- Línea debajo de home configurada aquí como border de abajo. No sé cómo cambiar el tamaño -->
       <a
         href="link?"
         target="_blank"
-        class="text-[#F09235] font-thin flex justify-center m-11"
+        class="text-[#F09235] font-thin flex justify-center m-11 border-b border-[#F09235]/100 border-b-4 border-solid pb-0 text-center"
         >home</a
       >
     </div>
