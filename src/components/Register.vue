@@ -45,8 +45,7 @@
             </div>
 
             <div class="mt-6">
-                <button type="submit" class="bg-[#F09235] text-white font-bold w-[240px] py-2 px-6 rounded-xl text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 uppercase">
-                    pago
+                <button type="submit" class="bg-[#F09235] text-white font-bold w-[500px] py-2 px-6 rounded-xl text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 uppercase">pago
                 </button>
             </div>
         </form>
