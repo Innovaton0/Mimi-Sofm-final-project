@@ -2,7 +2,7 @@
     <label for=""></label>
     <input type="text" />
 
-  <body class="bg-[#FCEDDE] h-screen font-m">
+  <body class="bg-[#FCEDDE] h-screen">
 
   <!-- Aquí va navbar -->
 
