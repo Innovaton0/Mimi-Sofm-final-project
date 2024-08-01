@@ -1,11 +1,12 @@
 <template>
 
-<section class="bg-[#F9EEDF] h-[100rem] font-mont"> 
+<section class="bg-[#F9EEDF] h-full font-mont"> 
   <h1 class="text-center p-16"> Aquí va el navbar</h1>
 
-  <p class="font-bold underline decoration-[rgb(240,146,53)] decoration-[6px] text-2xl m-10">NOSOTROS</p>
+  <!-- NOSOTROS -->
+  <p class="font-bold border-b-8 border-[#F09235]/100 decoration-[6px] text-2xl w-[20rem] text-end">NOSOTROS</p>
 
-  <div class="flex justify-center items-center space-x-20">
+  <div class="flex justify-center mt-10 items-center space-x-20">
   
     <!-- MATEUS -->
    <div class="flex flex-col gap-5 items-center">
@@ -59,10 +60,10 @@
   </div>
 
   <!-- CONTACTO -->
-  <p class="font-bold underline decoration-[rgb(240,146,53)] decoration-[6px] text-2xl m-10">CONTACTO</p>
+  <p class="font-bold border-b-8 border-[#F09235]/100 text-2xl text-end w-[20rem] mt-20">CONTACTO</p>
 
   
-  <div class="mt-9 p-7 flex rounded-lg shadow-md">
+  <div class="flex-wrap justify-around mt-9 p-7 flex rounded-lg shadow-md">
     <div class="flex flex-col">
     <h2 class="text-lg font-bold m-4 text-left">¡Hablemos!</h2>
         <form>
@@ -110,15 +111,15 @@
 
 
     <div class="flex flex-col">
-      <p class="font-bold mt-16 text-sm px-12">Correo:</p>
-      <p class="font-bold text-sm px-12">hola@larama.tattoo</p>
-      <p class="font-bold mt-6 text-sm px-12">Ubicación:</p>
+      <p class="font-bold text-sm">Correo:</p>
+      <p class="font-bold text-sm">hola@larama.tattoo</p>
+      <p class="font-bold text-sm">Ubicación:</p>
 
-      <div class="flex flex-col mt-10 px-20 w-[600px] items-center">
+      <div class="flex flex-col w-[400px] items-center">
     <img
       src="../assets/Nosotros/Captura de pantalla 2024-07-25 a la(s) 17.19.20.png"
       alt="Mapa"
-      class="border-[10px] border-black "
+      class="border-[8px] border-black "
     />
     
   </div>    
