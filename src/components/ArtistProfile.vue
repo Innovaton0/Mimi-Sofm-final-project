@@ -11,19 +11,25 @@
         />
       </div>
       
-      <p class="bg-black w-[400px] text-white text-lg font-semibold">Nicolás Kroft</p>
+      <!-- IMAGEN DE TATUADOR -->
+      <div class="flex flex-row">
+        <div class="border-r border-r-black pr-20">
+      <p class="text-white bg-black text-2xl text-center font-semibold">Nicolás Kroft</p>
 
-      <div class="p-4 flex flex-col sm:flex-row">
-        <div class="flex flex-col items-center sm:items-start mb-4 sm:mb-0 sm:mr-4">
+      <div>
+        <div class="items-center">
           <div
-            class="w-[300px] h-[500px] mb-4"
+            class="w-[300px] h-[400px]"
             :style="{ backgroundColor: randomColor() }"
           >
-            <!-- Bloque de color aleatorio para la imagen de perfil -->
           </div>
         </div>
+        </div>
+      </div>
 
-        <div class="flex-1">
+
+      <!-- biografía -->
+        <div class="flex-1 pl-20">
           <div class="mb-4">
             <h3 class="text-[#F09235] text-3xl font-bold">BIO</h3>
             <p class="text-sm w-80 font-light text-black">
@@ -51,11 +57,11 @@
         </div>
       </div>
 
-      <div class="p-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="w-[600px] gap-5 grid grid-cols-2 mt-16">
         <div
           v-for="n in 4"
           :key="n"
-          class="w-[400px] pb-[400px] relative"
+          class="w-72 h-72"
           :style="{ backgroundColor: randomColor() }"
         >
           <!-- Bloques de color aleatorio para los tatuajes -->
