@@ -79,9 +79,8 @@
 
 </header>
 
-<footer>
-  
-</footer>
+<Footer>
+</Footer>
 
   </template>
   
