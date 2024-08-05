@@ -34,7 +34,6 @@
       </div>
     </div>
   </body>
-  <!-- <footer> </footer> -->
 </template>
 
 <script>
