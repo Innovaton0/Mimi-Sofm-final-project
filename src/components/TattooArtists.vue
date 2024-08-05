@@ -29,6 +29,8 @@
            </div>
         </section>
     </main>
+    <Footer>
+    </Footer>
 </template>
     
 <script>
@@ -37,9 +39,10 @@ import artist2 from '../assets/tattooArtistsImages/artist2.png';
 import artist3 from '../assets/tattooArtistsImages/artist3.png';
 import apiExample from "../assets/tattooArtistsImages/api-example.png";
 import Search from './Search.vue';
+import Footer from "./Footer.vue";
     export default {
         name: "TattooArtists",
-        components: { Search },
+        components: { Search, Footer },
         data() {
         return {
           labels: ["JAPONES", "FLORAL", "ILUTRACIÓN", "MINIMAL", "PURE BLACK"],

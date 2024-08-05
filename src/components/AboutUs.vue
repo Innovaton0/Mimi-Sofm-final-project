@@ -126,13 +126,15 @@
     </div>
   </div>
 </section>
+<Footer>
+</Footer>
 
 </template>
-
 <script>
-
+import Footer from "./Footer.vue";
   export default {
     name: "AboutUs",
+    components: { Footer },
     data() {
       return {};
     },
