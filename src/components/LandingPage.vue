@@ -27,7 +27,7 @@
         href="link?"
         target="_blank"
         class="text-[#F09235] font-thin flex justify-center m-11 border-[#F09235]/100 border-b-4 border-solid pb-0 text-center"
-        >home</a
+        >home</a 
       >
     </div>
     <!-- Overlapping Center Image -->
