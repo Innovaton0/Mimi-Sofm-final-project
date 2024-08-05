@@ -10,6 +10,7 @@ import Help from './components/Help.vue';
 import AboutUs from './components/AboutUs.vue';
 import NotFound from './components/NotFound.vue';
 
+
 export const routes = [
   { path: "/", name: "landingpage", component: landingPage },
   { path: "/home", name: "home", component: Home },
