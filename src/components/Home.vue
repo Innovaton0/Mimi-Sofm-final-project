@@ -8,8 +8,8 @@
 
   <!-- BOTONES -->
   <div class="flex justify-around items-center mt-[26rem] font-bold w-full">
-    <button class="bg-[#F09235] rounded-md py-5 px-10 flex justify-center text-white">TATUAJES</button>
-    <button class="bg-[#F09235] p-3 py-5 px-10 rounded-md text-white">TATUADORES</button>
+    <router-link to="/tattoo" tag="button" class="bg-[#F09235] rounded-md py-5 px-10 flex justify-center text-white">TATUAJES</router-link>
+    <router-link to="tattooartists" tag="button" class="bg-[#F09235] p-3 py-5 px-10 rounded-md text-white">TATUADORES</router-link>
   </div>
 </section>
 
