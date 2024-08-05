@@ -1,8 +1,8 @@
 <template>
   <label for=""></label>
-  <input type="text" />
+  <search /> 
+  <!-- poner aquí el buscador -->
 
-  <body class="bg-[#FCEDDE] h-screen">
     <!-- Aquí va navbar -->
 
     <div
@@ -33,7 +33,8 @@
         <button class="bg-black">PURE BLACK</button>
       </div>
     </div>
-  </body>
+
+
 </template>
 
 <script>
