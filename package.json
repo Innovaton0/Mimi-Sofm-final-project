@@ -13,11 +13,7 @@
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@vitejs/plugin-vue": "^5.0.5",
-=======
     "@vitejs/plugin-vue": "^5.1.1",
->>>>>>> feat-nacha-home
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7",

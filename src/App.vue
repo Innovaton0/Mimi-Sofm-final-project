@@ -1,9 +1,5 @@
 <template>
-<<<<<<< HEAD
   <RouterView />
-=======
-  <RouterView/>
->>>>>>> feat-nacha-home
 
 </template>
 
