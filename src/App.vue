@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
   <RouterView />
+=======
+  <RouterView/>
+>>>>>>> feat-nacha-home
 
 </template>
 
@@ -25,4 +29,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>
