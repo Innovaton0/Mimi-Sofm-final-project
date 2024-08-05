@@ -23,11 +23,10 @@
         MEJORES TATUAJES & <br />TATUADORES DE BARCELONA
       </h1>
       <!-- Línea debajo de home configurada aquí como border de abajo. No sé cómo cambiar el tamaño -->
-      <a
-        href="link?"
-        target="_blank"
-        class="text-[#F09235] font-thin flex justify-center m-11 border-[#F09235]/100 border-b-4 border-solid pb-0 text-center"
-        >home</a 
+      <router-link
+        to="/home"
+        class="text-[#F09235] font-thin flex justify-center m-11 border-[#F09235]/100 border-b-4 border-solid pb-0 text-center z-10"
+        >home</router-link
       >
     </div>
     <!-- Overlapping Center Image -->
@@ -52,6 +51,8 @@
 </template>
 
 <script>
+import { RouterLink } from "vue-router";
+
 export default {
   name: "Landing-page",
 };
