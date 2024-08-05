@@ -36,8 +36,10 @@ import artist1 from '../assets/tattooArtistsImages/artist1.png';
 import artist2 from '../assets/tattooArtistsImages/artist2.png';
 import artist3 from '../assets/tattooArtistsImages/artist3.png';
 import apiExample from "../assets/tattooArtistsImages/api-example.png";
+import Search from './Search.vue';
     export default {
         name: "TattooArtists",
+        components: { Search },
         data() {
         return {
           labels: ["JAPONES", "FLORAL", "ILUTRACIÓN", "MINIMAL", "PURE BLACK"],
