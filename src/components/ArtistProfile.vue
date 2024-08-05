@@ -2,6 +2,8 @@
   <div class="font-mont">
   <div id="app" class="bg-[#F9EEDF] h-full py-10 px-5">
     <div class="max-w-4xl mx-auto rounded-lg overflow-hidden">
+      <div src="../assets/">
+      </div>
       <div class="flex justify-start items-start p-4">
         <h1 class="text-xl text-white bg-black font-bold p-2 w-[400px]">Aquí va el componente</h1>
         <input
