@@ -3,10 +3,8 @@
         <div class="col-start-1 col-end-4 row-start-1 row-end-1 z-10">
             NAVBAR</div>
 
-        <div class="col-start-1 col-end-4 md:col-end-3 row-start-2 flex items-start lg:items-end mx-5 lg:ms-20 z-10 translate-y-6">search bar
-         <!-- <label for="search" class="font-bold bg-black text-white text-center py-2 px-5 sm:px-10">CATEGORÍAS
-         </label>
-         <input class="w-[50rem] p-2" id="search" placeholder="Busca aquí" type="text"> -->
+        <div class="col-start-1 col-end-4 md:col-end-3 row-start-2 flex items-start lg:items-end mx-5 lg:ms-20 z-10 translate-y-6">
+            <Search></Search>
         </div>
         <div class="col-start-2 lg:col-start-3 col-end-4 row-start-1 row-end-3 flex justify-end">
             <img class="w-[30rem] h-[30rem] -translate-y-32" src="../assets/tattooArtistsImages/tattoo-tool2.png" alt="tattoo-tool">
