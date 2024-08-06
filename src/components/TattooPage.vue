@@ -38,6 +38,7 @@ import Search from "./Search.vue";
 import Footer from "./Footer.vue";
 export default {
   name: "TattooPage",
+  components: {Search, Footer},
   data() {
     return {};
   },
