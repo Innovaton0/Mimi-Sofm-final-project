@@ -1,5 +1,6 @@
 <template>
     
+  <Navbar></Navbar>
 <section class="bg-[#F9EEDF] h-[100vh] font-mont text-black flex items-center justify-center"> 
     
     <!-- GRID -->
@@ -52,12 +53,16 @@
       </div>
     </div>
 </section>
+<Footer></Footer>
 
 </template>
     
 <script>
+import Navbar from './Navbar.vue';
+import Footer from './Footer.vue';
     export default {
     name: "Register",
+    components: {Navbar, Footer},
     data() {
       return {
       imageUrl: null // To store the selected image URL

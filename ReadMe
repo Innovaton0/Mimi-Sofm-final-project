@@ -1,0 +1,60 @@
+# La Rama Tatuajes por Mimi Sofm
+
+**La Rama Tatuajes** es una aplicación web que conecta a usuarios con tatuadores y diseños de tatuajes. Los tatuadores pueden suscribirse para ampliar su visibilidad en la plataforma, permitiendo que los clientes los encuentren fácilmente. La plataforma ofrece una búsqueda rápida de tatuajes y artistas, facilitando que las personas descubran ideas inspiradoras, ya sea para un diseño personalizado o para una noche memorable en Barcelona. Ideal para quienes buscan creatividad y talento en el mundo del tatuaje.
+
+## Tecnologías Utilizadas
+
+- **Vue.js**: Framework progresivo de JavaScript para construir interfaces de usuario.
+- **Tailwind CSS**: Framework CSS para un diseño moderno y responsive.
+- **API**: Utilizada para obtener datos de tatuajes y tatuadores.
+
+## Características
+
+- **Búsqueda Rápida:** Encuentra tatuajes y tatuadores de manera rápida y eficiente.
+- **Suscripción para Tatuadores:** Permite a los tatuadores ampliar su visibilidad.
+- **Inspiración Creativa:** Ideas innovadoras para tatuajes.
+- **Diseño Responsive:** Experiencia de usuario óptima en todos los dispositivos.
+
+## Instalación
+
+Sigue estos pasos para instalar y ejecutar la aplicación localmente:
+
+1. Clona este repositorio:
+
+    ```bash
+    git clone https://github.com/Innovaton0/Mimi-Sofm-final-project 
+    ```
+
+2. Entra en el directorio del proyecto:
+
+    ```bash
+    cd Mimi-Sofm-final-project
+    ```
+
+3. Instala las dependencias:
+
+    ```bash
+    npm install
+    ```
+
+4. Ejecuta la aplicación:
+
+    ```bash
+    npm run dev
+    ```
+
+5. Abre tu navegador y ve a `http://localhost:5173/` para ver la aplicación en acción.
+
+## Contribución
+
+**¡Contribuciones son bienvenidas!** Para contribuir, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/new-feature`).
+3. Realiza tus cambios y haz commit de los mismos (`git commit -m 'Añadir new feature'`).
+4. Haz push a la rama (`git push origin feature/new-feature`).
+5. Abre un Pull Request.
+
+## Créditos
+
+- **Nombre de los Desarrolladores** - *Inno Melkonjan, Marianto Simó, Mateus França e Ignacia Ossandón* - [usuario](https://github.com/Innovaton0/Mimi-Sofm-final-project )
