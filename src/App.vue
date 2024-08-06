@@ -1,6 +1,7 @@
 <template>
   <RouterView />
 
+
 </template>
 
 <script>
@@ -17,7 +18,7 @@ import AboutUs from "./components/AboutUs.vue"
 import Search from "./components/Search.vue";
 import { mapState } from 'pinia'
     import { mapActions } from 'pinia'
-    import { useTattooStore } from './stores/tattooStore.js'
+    import { useTattooStore } from './stores/ArtistStore.js'
 
 export default {
   name: "App",
@@ -29,10 +30,10 @@ export default {
             ...mapState(useTattooStore, ['artists'])
         },
         methods: {
-            ...mapActions(useTattooStore, ['getArtists'])
+            ...mapActions(useTattooStore, ['getImages'])
         },
         mounted() {
-            this.getArtists()
+            this.getImages()
         }
 
 };

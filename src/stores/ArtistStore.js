@@ -9,6 +9,7 @@ export const useTattooStore = defineStore('TattooStore', {
         { name: faker.person.fullName(), desc: `${faker.person.bio()}. Dotwork artist` },
         { name: faker.person.fullName(), desc: `${faker.person.bio()}. Tribal artist` },
         { name: faker.person.fullName(), desc: faker.person.bio() },
+        
       ],
       images: []
     }),
@@ -23,7 +24,7 @@ export const useTattooStore = defineStore('TattooStore', {
               Authorization: `${this.key}`,
             },
             params: {
-              query: keyword,
+              query: "tattoo",
               per_page: 15,
             },
           });
@@ -40,6 +41,7 @@ export const useTattooStore = defineStore('TattooStore', {
           return {
             ...artist,
             imageUrl: image.src.medium,
+            imageLarge: image.src.large
           };
         });
       },
