@@ -1,5 +1,5 @@
 <template>
-  <label for=""></label>
+  <Navbar></Navbar>
 
   <!-- Aquí va navbar -->
   <Search></Search>
@@ -36,9 +36,10 @@
 <script>
 import Search from "./Search.vue";
 import Footer from "./Footer.vue";
+import Navbar from "./Navbar.vue";
 export default {
   name: "TattooPage",
-  components: {Search, Footer},
+  components: {Search, Footer, Navbar},
   data() {
     return {};
   },

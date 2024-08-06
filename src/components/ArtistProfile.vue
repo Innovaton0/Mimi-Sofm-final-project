@@ -1,16 +1,12 @@
 <template>
   <div class="font-mont">
+    <Navbar></Navbar>
   <div id="app" class="bg-[#F9EEDF] h-full py-10 px-5">
     <div class="max-w-4xl mx-auto rounded-lg overflow-hidden">
       <div src="../assets/">
       </div>
       <div class="flex justify-start items-start p-4">
-        <h1 class="text-xl text-white bg-black font-bold p-2 w-[400px]">Aquí va el componente</h1>
-        <input
-          type="text"
-          placeholder="Categorías"
-          class="border border-gray-300 rounded p-2"
-        />
+        <Search />
       </div>
       
       <!-- IMAGEN DE TATUADOR -->
@@ -72,11 +68,17 @@
     </div>
   </div>
 </div>
+<Footer></Footer>
 </template>
 
 <script>
+import Footer from "./Footer.vue";
+import Navbar from "./Navbar.vue";
+import Search from "./Search.vue";
+
 export default {
   name: "App",
+  components: { Search, Navbar, Footer },
   methods: {
     randomColor() {
       const letters = "0123456789ABCDEF";

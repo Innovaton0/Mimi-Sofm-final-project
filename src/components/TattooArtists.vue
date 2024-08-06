@@ -1,7 +1,6 @@
 <template>
     <header class="bg-[#F9EEDF] grid grid-cols-3 grid-rows-2 h-60 sm:h-68">
-        <div class="col-start-1 col-end-4 row-start-1 row-end-1 z-10">
-            NAVBAR</div>
+        <Navbar class="col-start-1 col-end-4 row-start-1 mt-5"></Navbar>
 
         <div class="col-start-1 col-end-4 md:col-end-3 row-start-2 flex items-start lg:items-end mx-5 lg:ms-20 z-10 translate-y-6">
             <Search></Search>
@@ -40,9 +39,10 @@ import artist3 from '../assets/tattooArtistsImages/artist3.png';
 import apiExample from "../assets/tattooArtistsImages/api-example.png";
 import Search from './Search.vue';
 import Footer from "./Footer.vue";
+import Navbar from './Navbar.vue';
     export default {
         name: "TattooArtists",
-        components: { Search, Footer },
+        components: { Search, Footer, Navbar },
         data() {
         return {
           labels: ["JAPONES", "FLORAL", "ILUTRACIÓN", "MINIMAL", "PURE BLACK"],
