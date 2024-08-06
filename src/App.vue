@@ -15,7 +15,9 @@ import Register from './components/Register.vue';
 import Help from './components/Help.vue';
 import AboutUs from "./components/AboutUs.vue"
 import Search from "./components/Search.vue";
-
+import { mapState } from 'pinia'
+    import { mapActions } from 'pinia'
+    import { useTattooStore } from './stores/tattooStore.js'
 
 export default {
   name: "App",
@@ -23,6 +25,16 @@ export default {
   data() {
     return {};
   },
+   computed: {
+            ...mapState(useTattooStore, ['artists'])
+        },
+        methods: {
+            ...mapActions(useTattooStore, ['getArtists'])
+        },
+        mounted() {
+            this.getArtists()
+        }
+
 };
 </script>
 
