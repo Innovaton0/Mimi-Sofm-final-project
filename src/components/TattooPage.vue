@@ -3,20 +3,32 @@
 
   <!-- Aquí va navbar -->
   <Search></Search>
+
   <div class="grid grid-cols-5 justify-between justify-items-center text-white">
     <!-- JAPONES -->
     <div class="col-start-1 col-end-2 border border-black">
-      <button class="bg-black">JAPONES</button>
+      <img
+        src="../assets/TattooPage/Japones.jpg"
+        alt="Torso con tatuaje de estilo japonés en brazos y pectoral"
+      />
+      <button class="bg-black w-full">JAPONES</button>
     </div>
 
     <!-- FLORAL -->
-    <div class="col-start-2 col-end-3 border border-red-700">
-      <button class="bg-black">FLORAL</button>
+    <div class="overflow-hidden col-start-2 col-end-3 border border-red-700">
+      <img 
+        src="../assets/TattooPage/Floral.jpg"
+        alt="Torso mujer con tatuajes florales en los costados"
+        />
+      <button class="bg-black w-full">FLORAL</button>
     </div>
 
     <!-- ILUSTRACIONES -->
     <div class="col-start-3 col-end-4 border border-green-700">
       <button class="bg-black">ILUSTRACIONES</button>
+      <img
+        src="../assets/TattooPage/Ilustraciones.jpg"
+        alt="antebrazos con tatuajes coloridos ilustraciones" />
     </div>
 
     <!-- MINIMAL -->
@@ -39,7 +51,7 @@ import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
 export default {
   name: "TattooPage",
-  components: {Search, Footer, Navbar},
+  components: { Search, Footer, Navbar },
   data() {
     return {};
   },
