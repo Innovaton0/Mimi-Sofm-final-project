@@ -1,7 +1,7 @@
 <template>
 
 <section class="bg-[#F9EEDF] h-full font-mont"> 
-  <h1 class="text-center p-16"> Aquí va el navbar</h1>
+  <Navbar></Navbar>
 
   <!-- NOSOTROS -->
   <p class="font-bold border-b-8 border-[#F09235]/100 decoration-[6px] text-2xl w-[20rem] text-end">NOSOTROS</p>
@@ -126,13 +126,16 @@
     </div>
   </div>
 </section>
+<Footer>
+</Footer>
 
 </template>
-
 <script>
-
+import Footer from "./Footer.vue";
+import Navbar from "./Navbar.vue";
   export default {
     name: "AboutUs",
+    components: { Navbar, Footer },
     data() {
       return {};
     },

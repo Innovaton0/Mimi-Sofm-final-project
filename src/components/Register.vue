@@ -1,12 +1,14 @@
 <template>
     
-<section class="bg-[#F9EEDF] h-[100vh] font-mont text-black flex items-center justify-center"> 
+<section class="bg-[#F9EEDF] h-full font-mont text-black flex flex-col items-center justify-center"> 
+
+  <Navbar class="w-full"></Navbar>
     
     <!-- GRID -->
-      <div class="grid grid-cols-12 gap-10 items-center justify-center p-5">
+      <div class="grid grid-cols-6 gap-10 items-center justify-center h-[32rem] p-8 ">
 
         <!-- COL 1 -->
-        <div class="col-span-4 flex flex-col items-center justify-self-end gap-6">
+        <div class="col-span-2 flex flex-col items-center justify-self-end gap-6">
         <div class="bg-white rounded-2xl flex flex-col items-start justify-between p-6 h-[320px] max-w-[240px] shadow-lg">
           <ul class="flex flex-col gap-5 pb-5">
             <h2 class="uppercase text-lg font-extrabold tracking-tight border-b-2 border-b-gray-800 pb-4">Suscripción Basic</h2>
@@ -21,7 +23,7 @@
       </div>
 
       <!-- COL 2 -->
-        <div class="col-span-8 flex flex-col flex-wrap justify-around rounded-lg">
+        <div class="col-span-4 flex flex-col flex-wrap justify-around rounded-lg">
         <form>
             <div class="mb-4">
                 <input type="text" id="name" name="name" placeholder="Nombre" class="px-4 w-[500px] py-2 mt-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:border-transparent" required/>
@@ -51,31 +53,34 @@
         </form>
       </div>
     </div>
+
+    <Footer class="w-full"></Footer>
 </section>
 
 </template>
     
 <script>
-    export default {
-    name: "Register",
-    data() {
+import Navbar from './Navbar.vue';
+import Footer from './Footer.vue';
+
+  export default {
+        name: "Register",
+        components: { Navbar, Footer },
+        data() {
       return {
-      imageUrl: null // To store the selected image URL
+      imageUrl: null
     };
   },
   methods: {
     selectImage() {
-      // Trigger the file input click programmatically
       this.$refs.fileInput.click();
     },
     onFileSelected(event) {
-      // Get the selected file
       const file = event.target.files[0];
       if (file) {
-        // Create a URL for the selected image file
         this.imageUrl = URL.createObjectURL(file);
       }
     }
   }
-};
+}
 </script>
