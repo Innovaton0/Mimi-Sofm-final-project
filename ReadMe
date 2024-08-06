@@ -5,18 +5,27 @@
 ## Tecnologías Utilizadas
 
 - **Visual Studio Code**: Entorno de desarrollo utilizado para escribir y depurar el código.
+
 - **Vue.js**: Framework progresivo de JavaScript utilizado para construir interfaces de usuario interactivas y dinámicas.
+
 - **Tailwind CSS**: Framework de CSS que facilita un diseño moderno, atractivo y responsive.
+
 - **API**: Implementada para obtener y gestionar datos de tatuajes y tatuadores de manera eficiente.
+
 - **Figma**: Herramienta de diseño utilizada para crear gráficos y prototipos visuales de alta calidad.
+
 - **Canva**: Plataforma utilizada para la presentación visual del proyecto.
+
 - **Trello**: Herramienta de gestión de proyectos utilizada para la planificación y organización del flujo de trabajo.
 
 ## Características
 
 - **Búsqueda Rápida:** Encuentra fácilmente tatuajes y tatuadores con un potente motor de búsqueda.
+
 - **Suscripción para Tatuadores:** Permite a los tatuadores aumentar su visibilidad y atraer más clientes.
+
 - **Inspiración Creativa:** Explora ideas innovadoras y únicas para tus tatuajes.
+
 - **Diseño Responsive:** Garantiza una experiencia de usuario óptima en todos los dispositivos, ya sea móvil, tablet o escritorio.
 
 ## Instalación
@@ -73,7 +82,7 @@ Para instalar y ejecutar la aplicación localmente, sigue estos pasos detallados
 
 6. **Accede a la aplicación:**
 
-    Abre tu navegador y visita `http://localhost:5173/` para ver la aplicación en funcionamiento.
+    Abre tu navegador y visita `http://localhost:5174/` para ver la aplicación en funcionamiento.
 
 ## Contribución
 

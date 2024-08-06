@@ -1,9 +1,11 @@
 <template>
 
   <Navbar></Navbar>
-  <section class="bg-[#F9EEDF] h-[100vh] font-mont text-black flex items-center justify-center"> 
+  <section class="bg-[#F9EEDF] font-mont text-black flex items-center justify-center py-12"> 
+  
     <!-- BOXS -->
       <div class="grid grid-cols-3 gap-10 max-w-[130rem] p-5">
+
         <!-- BOX 1 -->
         <div class="flex flex-col items-center justify-self-end gap-6">
         <div class="bg-white rounded-2xl flex flex-col items-start justify-between p-6 h-[320px] max-w-[240px] shadow-lg">
@@ -18,7 +20,7 @@
           </div>
         </div>
         <div>
-          <button class="bg-[#F09235] text-white font-bold w-[240px] py-2 px-6 rounded-xl text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 uppercase">Suscríbete</button>
+          <router-link to="/register" tag="button" class="bg-[#F09235] text-white font-bold py-2 px-16 rounded-xl text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 uppercase">Suscríbete</router-link>
         </div>
       </div>
 
@@ -37,7 +39,7 @@
           </div>
         </div>
         <div>
-          <button class="bg-black text-white font-bold w-[240px] py-2 px-6 rounded-xl text-sm hover:bg-[#3b3b3b] focus:outline-none focus:ring-2 uppercase">Suscríbete</button>
+          <router-link to="/register" tag="button" class="bg-black text-white font-bold py-2 px-16 rounded-xl text-sm hover:bg-[#3b3b3b] focus:outline-none focus:ring-2 uppercase">Suscríbete</router-link>
         </div>
       </div>
 
@@ -57,7 +59,7 @@
           </div>
         </div>
         <div>
-          <button class="bg-black text-white font-bold w-[240px] py-2 px-6 rounded-xl text-sm hover:bg-[#3b3b3b] focus:outline-none focus:ring-2 uppercase">Suscríbete</button>
+          <router-link to="/register" tag="button" class="bg-black text-white font-bold py-2 px-16 rounded-xl text-sm hover:bg-[#3b3b3b] focus:outline-none focus:ring-2 uppercase">Suscríbete</router-link>
         </div>
       </div>
       </div>
