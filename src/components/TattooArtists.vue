@@ -34,7 +34,7 @@
     
 <script>
 import { mapState } from 'pinia'
-import { useTattooStore } from '../stores/ArtistStore.js'
+import { useArtistStore } from '../stores/ArtistStore.js'
 import artist1 from '../assets/tattooArtistsImages/artist1.png';
 import artist2 from '../assets/tattooArtistsImages/artist2.png';
 import artist3 from '../assets/tattooArtistsImages/artist3.png';
@@ -52,7 +52,7 @@ import Navbar from './Navbar.vue';
     }
   },
         computed: {
-         ...mapState(useTattooStore, ['artists'])
+         ...mapState(useArtistStore, ['artists'])
         },
 
         data() {

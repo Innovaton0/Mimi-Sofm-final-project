@@ -2,7 +2,7 @@ import {defineStore} from 'pinia'
 import { faker } from "@faker-js/faker";
 import axios from "axios";
 
-export const useTattooStore = defineStore('TattooStore', {
+export const useArtistStore = defineStore('ArtistStore', {
     state: () => ({
       key: "XkGd6JgK1qI30r2bIcuIbHz0wJzOpCPU8csyfDWp3X02K8m0xakAxFfV",
       artists: [

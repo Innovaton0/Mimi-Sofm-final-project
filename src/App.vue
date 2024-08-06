@@ -18,7 +18,7 @@ import AboutUs from "./components/AboutUs.vue"
 import Search from "./components/Search.vue";
 import { mapState } from 'pinia'
     import { mapActions } from 'pinia'
-    import { useTattooStore } from './stores/ArtistStore.js'
+    import { useArtistStore } from './stores/ArtistStore.js'
 
 export default {
   name: "App",
@@ -27,10 +27,10 @@ export default {
     return {};
   },
    computed: {
-            ...mapState(useTattooStore, ['artists'])
+            ...mapState(useArtistStore, ['artists'])
         },
         methods: {
-            ...mapActions(useTattooStore, ['getImages'])
+            ...mapActions(useArtistStore, ['getImages'])
         },
         mounted() {
             this.getImages()
