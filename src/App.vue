@@ -16,6 +16,7 @@ import Register from './components/Register.vue';
 import Help from './components/Help.vue';
 import AboutUs from "./components/AboutUs.vue"
 import Search from "./components/Search.vue";
+import { useTattooStore } from './stores/TattooStore.js'
 import { mapState } from 'pinia'
     import { mapActions } from 'pinia'
     import { useArtistStore } from './stores/ArtistStore.js'
@@ -30,11 +31,14 @@ export default {
             ...mapState(useArtistStore, ['artists'])
         },
         methods: {
+          ...mapActions(useTattooStore, ['getTattooImages']),
             ...mapActions(useArtistStore, ['getImages'])
         },
         mounted() {
-            this.getImages()
+            this.getImages(),
+            this.getTattooImages()
         }
+        
 
 };
 </script>

@@ -24,7 +24,7 @@ export const useArtistStore = defineStore('ArtistStore', {
               Authorization: `${this.key}`,
             },
             params: {
-              query: "tattoo",
+              query: "tattoo artist",
               per_page: 15,
             },
           });
