@@ -1,8 +1,6 @@
 <template>
     <Navbar></Navbar>
     <Search></Search>
-    <h1> TATTOO PAGE 2 </h1>
-    <button> Submit </button>
     <Footer></Footer>
 
     <div v-if="images">
