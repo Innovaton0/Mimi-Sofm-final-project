@@ -7,7 +7,7 @@ module.exports = {
       backgroundImage: {
         'PhotoHome': "url('/src/assets/pexels-photo-955938.jpeg')",
       fontFamily: {
-        mont: ['"Montserrat"'],
+        mont: ['"Montserrat", sans-serif'],
       },
     },
   },
