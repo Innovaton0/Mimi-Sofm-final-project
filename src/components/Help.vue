@@ -1,7 +1,7 @@
 <template>
 <Navbar></Navbar>
 
-<div class="py-12 max-auto font-mont border">
+<div class="py-12 max-auto font-mont">
   <h3 class="font-bold bg-[#F09235] text-white py-2 px-5 rounded-r-2xl decoration-[6px] text-xl w-[20rem] mb-8 text-end uppercase">Preguntas Frecuentes</h3>
 
   <div class="flex flex-col gap-5 max-w-[66rem] mx-20 px-6">
