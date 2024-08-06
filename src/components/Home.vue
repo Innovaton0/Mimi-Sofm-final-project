@@ -1,11 +1,9 @@
 <template>
-
-<header>
-
+  <header>
+    
   <!-- IMAGEN -->
 <section class="bg-[url('/src/assets/pexels-photo-955938.jpeg')] bg-cover h-[70vh]">
-  <h1 class="font-bold text-white text-center">NAVBAR</h1>
-
+  <Navbar :bgColor="colorNavbar" :circleColor="navCircleColor"></Navbar>
   <!-- BOTONES -->
   <div class="flex justify-around items-center mt-[26rem] font-bold w-full">
     <router-link to="/tattoo" tag="button" class="bg-[#F09235] rounded-md py-5 px-10 flex justify-center text-white">TATUAJES</router-link>
@@ -86,12 +84,16 @@
   
   <script>
   import Footer from "./Footer.vue";
+import Navbar from "./Navbar.vue";
 
   export default {
     name: "home",
-    components: { Footer },
+    components: { Footer, Navbar },
     data() {
-      return {}
+      return {
+        colorNavbar: "bg-[#FFFFFF]/40",
+        navCircleColor: "bg-[#888888]"
+      }
   }
   }
   
