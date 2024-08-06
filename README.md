@@ -1,6 +1,6 @@
-# La Rama Tatuajes por Mimi Sofm
+# La Rama Tatuaje por Mimi Sofm
 
-**La Rama Tatuajes** es una innovadora aplicación web diseñada para conectar a entusiastas de los tatuajes con artistas talentosos y diseños únicos. Los tatuadores pueden suscribirse a la plataforma para aumentar su visibilidad y llegar a una audiencia más amplia. Los clientes, por su parte, pueden descubrir fácilmente artistas y explorar ideas creativas para tatuajes personalizados o para una experiencia memorable en Barcelona. Es la herramienta perfecta para aquellos que buscan creatividad y talento en el apasionante mundo del tatuaje.
+**La Rama Tatuaje** es una aplicación web diseñada para conectar a entusiastas de los tatuajes con artistas talentosos y diseños únicos. Los tatuadores pueden suscribirse a la plataforma para aumentar su visibilidad y llegar a una audiencia más amplia. Los clientes, por su parte, pueden descubrir fácilmente artistas y explorar ideas creativas para tatuajes personalizados o para una experiencia memorable en Barcelona. Es la herramienta perfecta para aquellos que buscan creatividad y talento en el apasionante mundo del tatuaje.
 
 ## Tecnologías Utilizadas
 
