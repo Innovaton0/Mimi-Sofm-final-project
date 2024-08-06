@@ -91,8 +91,8 @@ import Navbar from "./Navbar.vue";
     components: { Footer, Navbar },
     data() {
       return {
-        colorNavbar: "bg-[#FFFFFF]/40",
-        navCircleColor: "bg-[#888888]"
+        colorNavbar: "background-color: rgba(255,2555,255,0.4)",
+        navCircleColor: "background-color:#888888"
       }
   }
   }
