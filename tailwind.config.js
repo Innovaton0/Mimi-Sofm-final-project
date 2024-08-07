@@ -6,12 +6,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         'PhotoHome': "url('/src/assets/pexels-photo-955938.jpeg')",
+      },
       fontFamily: {
-        mont: ['"Montserrat", sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
     },
   },
   plugins: [],
-},
 };
 
