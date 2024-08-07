@@ -65,6 +65,7 @@ import Navbar from './Navbar.vue';
           images: [{image: artist1 , alternative: "male tattoo artist drawing on belly side"},
           {image: artist2 , alternative: "female tattoo , tattooing on a hand"},
           {image: artist3 , alternative: "male tattoo artist drawing on shoulder"}
+          
           ],
           apiImages: [apiExample],
           category: "",
