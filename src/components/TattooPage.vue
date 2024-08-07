@@ -25,20 +25,27 @@
 
     <!-- ILUSTRACIONES -->
     <div class="col-start-3 col-end-4 border border-green-700">
-      <button class="bg-black">ILUSTRACIONES</button>
       <img
         src="../assets/TattooPage/Ilustraciones.jpg"
-        alt="antebrazos con tatuajes coloridos ilustraciones" />
+        alt="antebrazos con tatuajes coloridos ilustraciones"/>
+      <button class="bg-black w-full">ILUSTRACIONES</button>
     </div>
 
     <!-- MINIMAL -->
     <div class="col-start-4 col-end-5 border border-yellow-500">
+      <img 
+      src="../assets/TattooPage/Minimal.jpg"
+      alt="Tatuaje líneas minimalistas de sol con luna sobrepuesta en tobillo"
+      />
       <button class="bg-black">MINIMAL</button>
     </div>
 
     <!-- PURE BLACK -->
     <div class="col-start-5 col-end-6 border border-blue-600">
-      <button class="bg-black">PURE BLACK</button>
+      <img
+      src="../assets/TattooPage/Pure Black.jpg"
+      alt="Tatuaje color negro con patron floral sobre hombro, brazo y pectoral"/>
+      <button class="bg-black w-full">PURE BLACK</button>
     </div>
   </div>
 
