@@ -29,7 +29,6 @@
       <button class="bg-black">PURE BLACK</button>
     </div>
   </div>
-
   <Footer></Footer>
 </template>
 
@@ -39,7 +38,7 @@ import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
 export default {
   name: "TattooPage",
-  components: {Search, Footer, Navbar},
+  components: { Search, Footer, Navbar },
   data() {
     return {};
   },
