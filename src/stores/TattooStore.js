@@ -7,14 +7,14 @@ export const useTattooStore = defineStore('TattooStore', {
       images: []
     }),
     actions: {
-      async getTattooImages() {
+      async getTattooImages(query) {
         try {
           const response = await axios.get("/api/search", {
             headers: {
               Authorization: `${this.key}`,
             },
             params: {
-              query: "tattoo",
+              query: query,
               per_page: 20,
             },
           });
