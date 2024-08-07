@@ -20,12 +20,16 @@
             </div>
 
            <div v-if="category" class="flex flex-wrap w-[400px] ms-16">
-              <div v-for="(artist, index) in artists" @click="updateBigImage(artist.imageUrl)" :key="index" class="border-2 border-yellow-600"><img :src="artist.imageUrl" :alt="artist.name" v-if="artist.imageUrl" /></div>
+              <div v-for="(artist, index) in artists" @click="updateBigImage(artist.imageUrl)" :key="index" class="border-2 border-yellow-600">
+              <img :src="artist.imageUrl" :alt="artist.name" v-if="artist.imageUrl" />
+            </div>
            </div>
+
            <div v-if="bigImage" class="border-2 border-purple-700 ms-32 w-[30rem]">
             <img :src="bigImage" alt="">
             <p> Si quieres saber más de mí: <router-link to="/tattooartists/:id" class="underline">Click Aquí</router-link></p>
            </div>
+
         </section>
     </main>
     <Footer>
@@ -47,9 +51,9 @@ import Navbar from './Navbar.vue';
         name: "TattooArtists",
         components: { Search, Footer, Navbar },
         methods: {
-    updateBigImage(imageUrl) {
-      this.bigImage = imageUrl;
-    }
+        updateBigImage(imageUrl) {
+            this.bigImage = imageUrl;
+        }
   },
         computed: {
          ...mapState(useArtistStore, ['artists'])
