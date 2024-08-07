@@ -4,7 +4,7 @@
   <!-- Aquí va navbar -->
   <Search></Search>
 
-  <div class="grid grid-cols-5 justify-between justify-items-center text-white">
+  <div class="grid grid-cols-5 justify-between justify-items-center space-x-4 text-white my-20 mx-5">
     <!-- JAPONES -->
     <div class="col-start-1 col-end-2 border border-black">
       <img
@@ -24,7 +24,7 @@
     </div>
 
     <!-- ILUSTRACIONES -->
-    <div class="col-start-3 col-end-4 border border-green-700">
+    <div class="col-start-3 col-end-4">
       <img
         src="../assets/TattooPage/Ilustraciones.jpg"
         alt="antebrazos con tatuajes coloridos ilustraciones"/>
@@ -32,16 +32,16 @@
     </div>
 
     <!-- MINIMAL -->
-    <div class="col-start-4 col-end-5 border border-yellow-500">
+    <div class="col-start-4 col-end-5">
       <img 
       src="../assets/TattooPage/Minimal.jpg"
       alt="Tatuaje líneas minimalistas de sol con luna sobrepuesta en tobillo"
       />
-      <button class="bg-black">MINIMAL</button>
+      <button class="bg-black w-full">MINIMAL</button>
     </div>
 
     <!-- PURE BLACK -->
-    <div class="col-start-5 col-end-6 border border-blue-600">
+    <div class="col-start-5 col-end-6">
       <img
       src="../assets/TattooPage/Pure Black.jpg"
       alt="Tatuaje color negro con patron floral sobre hombro, brazo y pectoral"/>
