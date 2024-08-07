@@ -8,7 +8,8 @@ export const useArtistStore = defineStore('ArtistStore', {
       artists: [
         { name: faker.person.fullName(), desc: `${faker.person.bio()}. Dotwork artist` },
         { name: faker.person.fullName(), desc: `${faker.person.bio()}. Tribal artist` },
-        { name: faker.person.fullName(), desc: faker.person.bio() },
+        { name: faker.person.fullName(), desc: `${faker.person.bio() }. Black work artist`},
+      
         
       ],
       images: []
@@ -25,7 +26,7 @@ export const useArtistStore = defineStore('ArtistStore', {
             },
             params: {
               query: "tattoo artist",
-              per_page: 15,
+              per_page: 20,
             },
           });
           this.images = response.data.photos;
