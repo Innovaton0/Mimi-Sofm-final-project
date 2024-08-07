@@ -10,6 +10,7 @@
       </div>
       
       <!-- IMAGEN DE TATUADOR -->
+       <!-- llamar a metodo para que se linkee con la api anterior -->
       <div class="flex flex-row">
         <div class="border-r border-r-black pr-20">
       <p class="text-white bg-black text-2xl text-center font-semibold">Nicolás Kroft</p>
@@ -43,6 +44,7 @@
             </p>
           </div>
 
+          <!-- llamar a API de tattoos > página de tatuajes -->
           <div class="mb-4">
             <h3 class="text-[#F09235] text-3xl font-bold">RRSS</h3>
             <p class="text-sm font-light text-black">@nicokroft @inkandsoul_</p>
