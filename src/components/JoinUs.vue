@@ -65,17 +65,16 @@
   </template>
 
 <script>
-import Navbar from './Navbar.vue';
-import Footer from './Footer.vue';
+import Navbar from "./Navbar.vue";
+import Footer from "./Footer.vue";
 
-  export default {
-    name: "JoinUs",
-    components: { Navbar, Footer },
-    data() {
-      return {};
-    },
-  };
-
+export default {
+  name: "JoinUs",
+  components: { Navbar, Footer },
+  data() {
+    return {};
+  },
+};
 </script>
 
 <styles></styles>

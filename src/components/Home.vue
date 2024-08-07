@@ -79,19 +79,16 @@
   import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
 
-  export default {
-    name: "home",
-    components: { Footer, Navbar },
-    data() {
-      return {
-        colorNavbar: "background-color: rgba(255,2555,255,0.4)",
-        navCircleColor: "background-color:#888888"
-      }
-  }
-  }
-  
-  </script>
+export default {
+  name: "home",
+  components: { Footer, Navbar },
+  data() {
+    return {
+      colorNavbar: "background-color: rgba(255,2555,255,0.4)",
+      navCircleColor: "background-color:#888888",
+    };
+  },
+};
+</script>
 
-  <style>
-
-</style>
+<style></style>
