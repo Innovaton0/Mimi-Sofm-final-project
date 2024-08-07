@@ -2,8 +2,11 @@
 
 @tailwind base;
 
-body {
-  @apply font-sans;
+@layer base {
+  body {
+    font-family: Montserrat, font-sans;
+    background-color: #FCEDDE;
+  }
 }
 
 @tailwind components;
