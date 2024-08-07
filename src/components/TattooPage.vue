@@ -48,7 +48,6 @@
       <button class="bg-black w-full">PURE BLACK</button>
     </div></RouterLink>
   </div>
-
   <Footer></Footer>
 </template>
 
