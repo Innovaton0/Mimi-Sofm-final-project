@@ -9,8 +9,8 @@
     <p class="from-neutral-400 font-light">Para contactar a un artista a través de nuestra página web, lo primero que debes hacer es elegir un tatuador o tatuaje y buscar el perfil del tatuador. Ponte en contacto a través del perfil de artista, descubre disponibilidade y pide tu cita online.</p>
 
     <!-- CARDS -->
-    <div class="grid grid-cols-3 gap-7 mb-5">
-      <div class="bg-white rounded-2xl flex items-center gap-2 h-32 p-4">
+    <div class="flex flex-col lg:flex-row gap-7 mb-5">
+      <div class="bg-white rounded-2xl flex items-center gap-2 h-32 p-4 flex-auto">
         <span class="text-7xl font-bold text-[#F09235] ml-[-2rem]">1</span>
         <div class="flex flex-col gap-1">
           <p class="font-bold text-lg text-[#F09235]">Elige a tu tatuador</p>
@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <div class="bg-white rounded-2xl flex items-center gap-2 h-32 p-4">
+      <div class="bg-white rounded-2xl flex items-center gap-2 h-32 p-4 flex-auto">
         <span class="text-7xl font-bold text-[#F09235] ml-[-2rem]">2</span>
         <div class="flex flex-col gap-1">
           <p class="font-bold text-lg text-[#F09235]">Ponte en contacto</p>
@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <div class="bg-white rounded-2xl flex items-center gap-2 h-32 p-4">
+      <div class="bg-white rounded-2xl flex items-center gap-2 h-32 p-4 flex-auto">
         <span class="text-7xl font-bold text-[#F09235] ml-[-2rem]">3</span>
         <div class="flex flex-col gap-1">
           <p class="font-bold text-lg text-[#F09235]">Pide una cita</p>
