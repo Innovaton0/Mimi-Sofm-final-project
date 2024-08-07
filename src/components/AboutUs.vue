@@ -2,7 +2,9 @@
 
   <Navbar></Navbar>
   <section class="bg-[#F9EEDF] h-full font-mont"> 
-
+    <div class="w-full flex justify-end -translate-y-[11rem]">
+  <img class="absolute" src="../assets/bg-image-tattoo.png" alt="onrament">
+   </div>
   <!-- NOSOTROS -->
   <p class="font-bold border-b-8 border-[#F09235]/100 decoration-[6px] text-2xl w-[20rem] text-end">NOSOTROS</p>
 
@@ -66,7 +68,7 @@
   <div class="flex-wrap justify-around mt-9 p-7 flex rounded-lg shadow-md">
     <div class="flex flex-col">
     <h2 class="text-lg font-bold m-4 text-left">¡Hablemos!</h2>
-        <form>
+        <form class="z-10">
 
             <!-- Campo de nombre -->
             <div class="mb-4">
