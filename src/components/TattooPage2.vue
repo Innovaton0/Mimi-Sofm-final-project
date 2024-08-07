@@ -3,24 +3,23 @@
   <Search></Search>
 
   <!-- Buttons -->
-  <div class="grid grid-cols-5 py-10 justify-items-center"> 
+  <div class="flex flex-wrap py-10 gap-2 justify-around"> 
     <div>
-      <button @click="fetchImages('tattoos')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">JAPONES</button>
+      <button @click="fetchImages('tattoos')" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">JAPONES</button>
     </div>
     <div>
-      <button @click="fetchImages('tattooing')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">FLORAL</button>
+      <button @click="fetchImages('tattooing')" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">FLORAL</button>
     </div>
     <div>
-      <button @click="fetchImages('tattoing')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">ILUSTRACIONES</button>
+      <button @click="fetchImages('tattoing')" class="bg-black text-white text-sm w-32 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">ILUSTRACIONES</button>
     </div>
     <div>
-      <button @click="fetchImages('tattoo art')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">MINIMAL</button>
+      <button @click="fetchImages('tattoo art')" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">MINIMAL</button>
     </div>
     <div>
-      <button @click="fetchImages('tattoo')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">PURE BLACK</button>
+      <button @click="fetchImages('tattoo')" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">PURE BLACK</button>
     </div>
   </div>
-
 
   <!-- Grid images -->
   <div v-if="images" class="flex flex-wrap gap-3 mx-6 pb-10">
@@ -32,21 +31,21 @@
   <!-- Modal Image -->
   <transition name="transition">
   <div v-if="modalImage" @click="closeModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div @click.stop class="bg-white p-8 shadow-2xl w-[54rem] flex justify-center gap-4">
+    <div @click.stop class="bg-white mx-8 p-8 shadow-2xl w-[40rem] lg:w-[54rem] flex justify-center gap-4">
       <div class="py-2">
         <div class="text-sm flex items-center justify-end gap-1 mb-1">
-          <p>Guardar como favorito</p><i class="fa-solid fa-heart hover:text-[#F09235] active:text-[#F09235]"></i>
+          <p class="text-xs lg:text-sm">Guardar como favorito</p><i class="fa-solid fa-heart hover:text-[#F09235] active:text-[#F09235]"></i>
         </div>
         <img :src="modalImage" class="w-full h-auto"/>
       </div>
 
       <div class="flex flex-col items-center w-[21rem] px-2 justify-around border-l border-l-black">
-        <p class="text-center text-2xl">Conoce al <router-link to="/tattooartists/:id" class="font-bold text-[#F09235] hover:text-[#651c19]">artista</router-link> que hizo esta tatuaje</p>
+        <p class="text-center leading-2 text-lg md:text-xl lg:text-2xl">Conoce al <router-link to="/tattooartists/:id" class="font-bold text-[#F09235] hover:text-[#651c19]">artista</router-link> que hizo esta tatuaje</p>
         <router-link to="/tattooartists/:id">
             <img
             src="../assets/Tatuajes Home/pexels-photo-1433273.png"
             alt="Imagen Redonda"
-            class="w-40 h-40 rounded-full object-cover"
+            class=" w-24 h-24 lg:w-40 lg:h-40 p-2 rounded-full object-cover"
             /> 
           </router-link>
         <ul class="flex gap-4">
@@ -55,7 +54,7 @@
           <li><a href="https://www.linkedin.com/school/codeop/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
         </ul>
       </div>
-      <button @click="closeModal" class="px-2 h-9 font-light bg-black text-sm text-white hover:bg-[#651c19]">X</button>
+      <button @click="closeModal" class="px-1 h-5 lg:px-2 lg:h-9 font-light bg-black text-xs text-white hover:bg-[#651c19]">X</button>
     </div>
     </div>
   </transition>
