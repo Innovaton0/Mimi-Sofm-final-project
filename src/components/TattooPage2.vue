@@ -5,19 +5,19 @@
   <!-- Buttons -->
   <div class="grid grid-cols-5 py-10 justify-items-center"> 
     <div>
-      <button class="bg-black text-white w-48 p-1 hover:bg-[#651c19] active:bg-[#F09235]">JAPONES</button>
+      <button @click="fetchImages('tattoos')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">JAPONES</button>
     </div>
     <div>
-      <button class="bg-black text-white w-48 p-1 hover:bg-[#651c19] active:bg-[#F09235]">FLORAL</button>
+      <button @click="fetchImages('tattooing')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">FLORAL</button>
     </div>
     <div>
-      <button class="bg-black text-white w-48 p-1 hover:bg-[#651c19] active:bg-[#F09235]">ILUSTRACIONES</button>
+      <button @click="fetchImages('tattoing')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">ILUSTRACIONES</button>
     </div>
     <div>
-      <button class="bg-black text-white w-48 p-1 hover:bg-[#651c19] active:bg-[#F09235]">MINIMAL</button>
+      <button @click="fetchImages('tattoo art')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">MINIMAL</button>
     </div>
     <div>
-      <button class="bg-black text-white w-48 p-1 hover:bg-[#651c19] active:bg-[#F09235]">PURE BLACK</button>
+      <button @click="fetchImages('tattoo')" class="bg-black text-white w-48 p-1 hover:bg-[#651c19] focus:bg-[#F09235]">PURE BLACK</button>
     </div>
   </div>
 
@@ -41,8 +41,8 @@
       </div>
 
       <div class="flex flex-col items-center w-[21rem] px-2 justify-around border-l border-l-black">
-        <p class="text-center text-2xl">Conoce al <router-link to="/tattooartists" class="font-bold text-[#F09235] hover:text-[#651c19]">artista</router-link> que hizo esta tatuaje</p>
-        <router-link to="/tattooartists">
+        <p class="text-center text-2xl">Conoce al <router-link to="/tattooartists/:id" class="font-bold text-[#F09235] hover:text-[#651c19]">artista</router-link> que hizo esta tatuaje</p>
+        <router-link to="/tattooartists/:id">
             <img
             src="../assets/Tatuajes Home/pexels-photo-1433273.png"
             alt="Imagen Redonda"
@@ -83,7 +83,16 @@ export default {
   ...mapState(useTattooStore, ['images'])
   },
 
+  mounted() {
+    this.fetchImages('tattoo');
+  },
+
   methods: {
+    fetchImages(query) {
+      const tattooStore = useTattooStore();
+      tattooStore.getTattooImages(query);
+    },
+
     updateBigImage(src) {
       this.modalImage = src;
     },

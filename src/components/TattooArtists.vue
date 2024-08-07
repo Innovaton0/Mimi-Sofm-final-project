@@ -19,7 +19,7 @@
                 <img :src="img.image" :alt="img.alternative">
             </div>
 
-           <div v-if="category" class="flex flex-wrap w-[400px] ms-16">
+           <div v-if="category" class="flex flex-wrap w-[200px] ms-16">
               <div v-for="(artist, index) in artists" @click="updateBigImage(artist.imageUrl)" :key="index" class="border-2 border-yellow-600">
               <img :src="artist.imageUrl" :alt="artist.name" v-if="artist.imageUrl" />
             </div>
@@ -65,7 +65,6 @@ import Navbar from './Navbar.vue';
           images: [{image: artist1 , alternative: "male tattoo artist drawing on belly side"},
           {image: artist2 , alternative: "female tattoo , tattooing on a hand"},
           {image: artist3 , alternative: "male tattoo artist drawing on shoulder"}
-          
           ],
           apiImages: [apiExample],
           category: "",
