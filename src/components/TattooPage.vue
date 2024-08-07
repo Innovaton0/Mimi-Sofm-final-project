@@ -13,8 +13,9 @@
         src="../assets/TattooPage/Japones.jpg"
         alt="Torso con tatuaje de estilo japonés en brazos y pectoral"
       />
-      <button class="bg-black w-full">JAPONES</button>
-      <!-- Aquí aplicar un router link en lugar de button? -->
+      <RouterLink to="/tattoo2"
+        ><button class="bg-black w-full">JAPONES</button></RouterLink
+      >
     </div>
 
     <!-- FLORAL -->
