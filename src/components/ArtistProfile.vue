@@ -78,7 +78,7 @@ import axios from 'axios';
 
 export default {
   name: 'App',
-  components: { Navbar, Search, Footer},
+  components: { Navbar, Search, Footer },
   data() {
     return {
       tattooArtistPhoto: '', // Para almacenar la imagen del tatuador
@@ -86,7 +86,6 @@ export default {
     };
   },
   methods: {
-    
     async fetchTattooArtistPhoto() {
       try {
         const response = await axios.get('https://api.pexels.com/v1/search', {
@@ -95,12 +94,12 @@ export default {
           },
           params: {
             query: 'tattoo artist', // Aquí puedes personalizar el nombre del tatuador si tienes uno específico
-            per_page: 1
+            per_page: 10 // Obtener varias imágenes para mezclar
           }
         });
         const photos = response.data.photos;
         if (photos.length > 0) {
-          this.tattooArtistPhoto = photos[0].src.large; // Obtiene la primera imagen
+          this.tattooArtistPhoto = this.getRandomPhotos(photos.map(photo => photo.src.large), 1)[0]; // Selecciona una foto al azar
         }
       } catch (error) {
         console.error('Error fetching tattoo artist photo:', error);
@@ -114,14 +113,19 @@ export default {
           },
           params: {
             query: 'tattoo',
-            per_page: 4 // Cantidad de imágenes a obtener
+            per_page: 30 // Cambiado a 30 para obtener 30 imágenes
           }
         });
         const photos = response.data.photos;
-        this.tattooPhotos = photos.map(photo => photo.src.large); // Guarda las URLs de las imágenes
+        const allPhotos = photos.map(photo => photo.src.large); // Guarda las URLs de las imágenes
+        this.tattooPhotos = this.getRandomPhotos(allPhotos, 4); // Obtén 4 fotos aleatorias
       } catch (error) {
         console.error('Error fetching tattoo photos:', error);
       }
+    },
+    getRandomPhotos(photos, count) {
+      const shuffledPhotos = photos.sort(() => 0.5 - Math.random()); // Mezcla aleatoriamente las fotos
+      return shuffledPhotos.slice(0, count); // Selecciona las primeras 'count' fotos
     }
   },
   mounted() {
