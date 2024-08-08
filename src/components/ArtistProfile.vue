@@ -1,8 +1,11 @@
 <template>
-  <div class="font-mont">
+  <main class="min-h-screen">
+    <div class="flex justify-end">
+      <img class="absolute -z-10 translate-x-40 md:translate-x-80"src="../assets/bg-image-ornament-full.png" alt="tattoo ornament">
+    </div>
     <Navbar></Navbar>
-    <div id="app" class="bg-[#F9EEDF] h-full py-10 px-5">
-      <div class="max-w-4xl mx-auto rounded-lg overflow-hidden">
+    
+      <div class="flex flex-col items-center mx-auto rounded-lg overflow-hidden">
         <div src="../assets/">
         </div>
         <div class="flex justify-start items-start p-4">
@@ -10,9 +13,9 @@
         </div>
 
         <!-- IMAGEN DE TATUADOR -->
-        <div class="flex flex-row">
-          <div class="border-r border-r-black pr-20">
-            <p class="text-white bg-black text-2xl text-center font-semibold">Nicolás Kroft</p>
+        <div class="flex flex-row flex-wrap gap-4 justify-center md:justify-start">
+          <div class="border-b md:border-b-0 border-b-black pb-10 md:border-r md:border-r-black md:pr-20">
+            <p class="text-white bg-black text-2xl text-center font-semibold">{{artist.name}}</p>
 
             <div>
               <div class="items-center">
@@ -29,15 +32,7 @@
             <div class="mb-4">
               <h3 class="text-[#F09235] text-3xl font-bold">BIO</h3>
               <p class="text-sm w-80 font-light text-black">
-                Nicolás Kroft es un renombrado tatuador argentino nacido en Buenos
-                Aires en 1985. Desde joven mostró talento artístico, aprendiendo
-                dibujo y pintura de su abuelo. Comenzó como aprendiz en un estudio
-                de tatuajes y en 2010, abrió su propio estudio, Ink & Soul,
-                ganando reconocimiento por sus retratos. Nicolás ha ganado premios
-                en convenciones internacionales y es conocido por su atención al
-                detalle y su habilidad para crear diseños personalizados. También
-                es un defensor activo de la protección animal, organizando eventos
-                benéficos para apoyar refugios.
+              {{ artist.desc }}
               </p>
             </div>
 
@@ -55,19 +50,19 @@
         </div>
 
         <!-- IMÁGENES DE TATUAJES -->
-        <div class="w-[600px] gap-5 grid grid-cols-2 mt-16">
+        <div class="gap-5 mt-16 flex flex-col sm:flex-row sm:flex-wrap max-w-[40rem] md:-ms-40">
           <div
             v-for="(photo, index) in tattooPhotos"
             :key="index"
-            class="w-72 h-72 bg-cover bg-center"
+            class="w-72 h-72 bg-cover bg-center mb-4"
             :style="{ backgroundImage: `url(${photo})` }">
             <!-- Imágenes de tatuajes -->
           </div>
         </div>
       </div>
-    </div>
+  
+  </main>
     <Footer></Footer>
-  </div>
 </template>
 
 <script>
@@ -75,17 +70,27 @@ import Navbar from './Navbar.vue';
 import Search from './Search.vue';
 import Footer from './Footer.vue';
 import axios from 'axios';
+import { mapState } from 'pinia'
+import { useArtistStore } from '../stores/ArtistStore.js'
 
 export default {
   name: 'App',
   components: { Navbar, Search, Footer },
+  computed: {
+    ...mapState(useArtistStore, ["artists"])
+  },
   data() {
     return {
       tattooArtistPhoto: '', // Para almacenar la imagen del tatuador
-      tattooPhotos: [] // Para almacenar las imágenes de tatuajes
+      tattooPhotos: [], // Para almacenar las imágenes de tatuajes
+      artist: {}
     };
   },
   methods: {
+    getArtistById() {
+      const artistId = this.$route.params.id
+      this.artist = this.artists.find((artist) => artist.id === artistId)
+    },
     async fetchTattooArtistPhoto() {
       try {
         const response = await axios.get('https://api.pexels.com/v1/search', {
@@ -129,6 +134,7 @@ export default {
     }
   },
   mounted() {
+    this.getArtistById();
     this.fetchTattooArtistPhoto(); 
     // Llama a la función al montar el componente
     

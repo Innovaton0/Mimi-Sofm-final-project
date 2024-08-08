@@ -1,24 +1,18 @@
 <template>
-  <Navbar></Navbar>
-  <Search></Search>
-
+   <header>
+    <div class="flex justify-end">
+      <img class="absolute translate-x-24 -translate-y-40 -z-10"src="../assets/tattooArtistsImages/tattoo-tool2.png" alt="tattoo tool">
+    </div>
+    <Navbar></Navbar>
+  <div class="mt-28  ms-4 md:ms-10 2xl:ms-32 mb-2">
+   <Search></Search>
+  </div>
+  </header>
   <!-- Buttons -->
-  <div class="flex flex-wrap py-10 gap-2 justify-around"> 
-    <div>
-      <button @click="fetchImages('tattoos')" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">JAPONES</button>
-    </div>
-    <div>
-      <button @click="fetchImages('tattooing')" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">FLORAL</button>
-    </div>
-    <div>
-      <button @click="fetchImages('tattoing')" class="bg-black text-white text-sm w-32 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">ILUSTRACIONES</button>
-    </div>
-    <div>
-      <button @click="fetchImages('tattoo art')" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">MINIMAL</button>
-    </div>
-    <div>
-      <button @click="fetchImages('tattoo')" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">PURE BLACK</button>
-    </div>
+  <div class="flex flex-wrap py-10 gap-2 justify-around">
+    <button v-for="button in buttons" :key="button.query" @click="fetchImages(button.query)" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">
+      {{ button.label }}
+    </button>
   </div>
 
   <!-- Grid images -->
@@ -40,7 +34,9 @@
       </div>
 
       <div class="flex flex-col items-center w-[21rem] px-2 justify-around border-l border-l-black">
-        <p class="text-center leading-2 text-lg md:text-xl lg:text-2xl">Conoce al <router-link to="/tattooartists/:id" class="font-bold text-[#F09235] hover:text-[#651c19]">artista</router-link> que hizo esta tatuaje</p>
+        <p class="text-center leading-2 text-lg md:text-xl lg:text-2xl">Conoce al 
+          <router-link :to="`/tattooartists/${getRandomId}`" class="font-bold text-[#F09235] hover:text-[#651c19]">artista
+          </router-link> que hizo esta tatuaje</p>
         <router-link to="/tattooartists/:id">
             <img
             src="../assets/Tatuajes Home/pexels-photo-1433273.png"
@@ -75,11 +71,24 @@ export default {
   data() {
     return {
       modalImage: "",
+      buttons: [
+        { label: "JAPONES", query: "tattoos" },
+        { label: "FLORAL", query: "tattooing" },
+        { label: "ILUSTRACIONES", query: "tattoing" },
+        { label: "MINIMAL", query: "tattoo art" },
+        { label: "PURE BLACK", query: "tattoo" }
+      ]
     };
   },
 
   computed: {
-  ...mapState(useTattooStore, ['images'])
+  ...mapState(useTattooStore, ['images']),
+  getRandomId() {
+      const min = Math.ceil(1)
+      const max = Math.floor(3)
+
+      return Math.floor(Math.random()*(max-min)) +1
+    },
   },
 
   mounted() {
@@ -87,6 +96,7 @@ export default {
   },
 
   methods: {
+    
     fetchImages(query) {
       const tattooStore = useTattooStore();
       tattooStore.getTattooImages(query);

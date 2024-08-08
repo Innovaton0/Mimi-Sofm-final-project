@@ -6,7 +6,7 @@
   <!-- BOTONES -->
   <div class="flex justify-around items-center font-bold w-full translate-y-8">
     <router-link to="/tattoo" tag="button" class="bg-[#F09235] rounded-lg py-5 w-40 md:w-60 lg:w-80 text-center flex justify-center text-white">TATUAJES</router-link>
-    <router-link to="tattooartists" tag="button" class="bg-[#F09235] p-3 py-5 w-40 md:w-60 lg:w-80 text-center rounded-lg text-white">TATUADORES</router-link>
+    <router-link @click.native="() => changeCategory('')" to="tattooartists" tag="button" class="bg-[#F09235] p-3 py-5 w-40 md:w-60 lg:w-80 text-center rounded-lg text-white">TATUADORES</router-link>
   </div>
 </header>
 
@@ -78,10 +78,19 @@
   <script>
   import Footer from "./Footer.vue";
 import Navbar from "./Navbar.vue";
+import { mapState, mapActions } from 'pinia'
+import { useArtistStore } from '../stores/ArtistStore.js'
 
 export default {
   name: "home",
   components: { Footer, Navbar },
+  computed: {
+         ...mapState(useArtistStore, ["category"])
+
+        },
+  methods: {
+        ...mapActions(useArtistStore, ['changeCategory'])
+      },
   data() {
     return {
       colorNavbar: "background-color: rgba(255,2555,255,0.4)",
