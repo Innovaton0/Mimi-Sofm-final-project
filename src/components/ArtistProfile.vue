@@ -1,8 +1,11 @@
 <template>
-  <div class="font-mont">
+  <main class="min-h-screen">
+    <div class="flex justify-end">
+      <img class="absolute -z-10 translate-x-40 md:translate-x-80"src="../assets/bg-image-ornament-full.png" alt="tattoo ornament">
+    </div>
     <Navbar></Navbar>
-    <div id="app" class="bg-[#F9EEDF] h-full py-10 px-5">
-      <div class="max-w-4xl mx-auto rounded-lg overflow-hidden">
+    
+      <div class="flex flex-col items-center mx-auto rounded-lg overflow-hidden">
         <div src="../assets/">
         </div>
         <div class="flex justify-start items-start p-4">
@@ -10,8 +13,8 @@
         </div>
 
         <!-- IMAGEN DE TATUADOR -->
-        <div class="flex flex-row">
-          <div class="border-r border-r-black pr-20">
+        <div class="flex flex-row flex-wrap gap-4 justify-center md:justify-start">
+          <div class="border-b md:border-b-0 border-b-black pb-10 md:border-r md:border-r-black md:pr-20">
             <p class="text-white bg-black text-2xl text-center font-semibold">Nicolás Kroft</p>
 
             <div>
@@ -55,19 +58,19 @@
         </div>
 
         <!-- IMÁGENES DE TATUAJES -->
-        <div class="w-[600px] gap-5 grid grid-cols-2 mt-16">
+        <div class="gap-5 mt-16 flex flex-col sm:flex-row sm:flex-wrap max-w-[40rem] md:-ms-40">
           <div
             v-for="(photo, index) in tattooPhotos"
             :key="index"
-            class="w-72 h-72 bg-cover bg-center"
+            class="w-72 h-72 bg-cover bg-center mb-4"
             :style="{ backgroundImage: `url(${photo})` }">
             <!-- Imágenes de tatuajes -->
           </div>
         </div>
       </div>
-    </div>
+  
+  </main>
     <Footer></Footer>
-  </div>
 </template>
 
 <script>
