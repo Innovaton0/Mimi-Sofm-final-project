@@ -92,7 +92,6 @@ export default {
             return array;
         },
 
-        // Cambiar categoría y barajar imágenes
         changeCategory(label) {
             this.selectedCategory = label;
             this.shuffledImages = this.shuffleImages([...this.images]); // Barajar imágenes estándar
