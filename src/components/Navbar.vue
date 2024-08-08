@@ -9,7 +9,7 @@
                 </div>
             </button>
         </div>
-        <router-link to="/" :style="circleColor" class="bg-black rounded-full w-36 h-36 z-20 flex justify-center items-center">
+        <router-link to="/home" :style="circleColor" class="bg-black rounded-full w-36 h-36 z-20 flex justify-center items-center">
             <img src="../assets/logo-nav.png" alt="logo">
         </router-link>
         <div :style="bgColor" class="bg-black text-white h-16 -ms-4 flex-auto flex justify-end items-center gap-5 pe-4 sm:pe-8">
