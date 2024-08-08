@@ -11,20 +11,23 @@
         </div>
     </header>
     <main class="bg-[#F9EEDF] h-screen">
-        <section class="flex flex-row justify-around md:justify-normal flex-wrap pt-20">
-            <div class="md:w-36 text-white flex flex-wrap justify-evenly md:flex-col gap-1 md:gap-5 ps-5">
-                <button @click="category = label" class="bg-black py-5 px-2 text-center" v-for="label in labels" :key="label.labels">{{ label }}</button>
+        <section class="flex flex-row justify-around md:justify-normal flex-wrap pt-20 ">
+            <div class="md:w-36 text-white flex flex-wrap justify-evenly md:flex-col gap-1 md:gap-5 ps-5 border-2">
+            <button v-for="button in buttons" :key="button.query" @click="fetchImages(button.query)" class="bg-black text-white text-sm h-24 hover:bg-[#651c19] focus:bg-[#F09235]">{{ button.label }} </button>
             </div>
+
+            <!-- 1 pag -->
             <div v-for="(img, index) in images" :key="index" v-if="!category" class="bg-[rgb(249,238,223)] flex flex-row justify-around flex-auto pt-10 sm:pt-0 sm:gap-4">
                 <img :src="img.image" :alt="img.alternative">
             </div>
 
-           <div v-if="category" class="flex gap-2 w-[600px] ms-16">
+                <!-- 2 pag -->
+           <div v-if="category" class="flex gap-2 w-[600px] ms-16 ">
               <div v-for="(artist, index) in artists" @click="updateBigImage(artist.imageUrl)" :key="index" class=""><img :src="artist.imageUrl" :alt="artist.name" v-if="artist.imageUrl" /></div>
            </div>
            <div v-if="bigImage" class="ms-32 w-[30rem]">
             <img :src="bigImage" alt="">
-            <div class="flex flex-col bg-black text-white justify-center items-center pt-4">
+            <div class="flex flex-col bg-black text-white justify-center items-center p-4">
                 <p class="text-xl">Nicolás Kroft - 10 años de experiencia</p>
                 <p> Si quieres saber más: <router-link to="/tattooartists/:id" class="font-bold px-2 text-[#F09235] hover:text-[#ffb66c] focus:text-[#ffb66c]"> Click Aquí </router-link></p>
            </div>
@@ -60,7 +63,13 @@ import Navbar from './Navbar.vue';
 
         data() {
         return {
-          labels: ["JAPONES", "FLORAL", "ILUTRACIÓN", "MINIMAL", "PURE BLACK"],
+        buttons: [
+        { label: "JAPONES", query: "tattoos" },
+        { label: "FLORAL", query: "tattooing" },
+        { label: "ILUSTRACIONES", query: "tattoing" },
+        { label: "MINIMAL", query: "tattoo art" },
+        { label: "PURE BLACK", query: "tattoo" }
+      ],
           images: [{image: artist1 , alternative: "male tattoo artist drawing on belly side"},
           {image: artist2 , alternative: "female tattoo , tattooing on a hand"},
           {image: artist3 , alternative: "male tattoo artist drawing on shoulder"}
