@@ -10,7 +10,7 @@
             <img v-if="category" class="h-[66rem]" src="../assets/tattooArtistsImages/tattoo-artist-big.png" alt="">
         </div>
     </header>
-    <main class="bg-[#F9EEDF] h-screen">
+    <main class="bg-[#F9EEDF] min-h-screen">
         <section class="flex flex-row justify-around md:justify-normal flex-wrap pt-20">
             <div class="md:w-36 text-white flex flex-wrap justify-evenly md:flex-col gap-1 md:gap-5 ps-5">
                 <button @click="category = label" class="bg-black py-5 px-2 text-center" v-for="label in labels" :key="label.labels">{{ label }}</button>
