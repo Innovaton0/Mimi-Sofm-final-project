@@ -13,7 +13,8 @@
     <main class="bg-[#F9EEDF] min-h-screen">
         <section class="flex flex-row justify-around md:justify-normal flex-wrap pt-20">
             <div class="md:w-36 text-white flex flex-wrap justify-evenly md:flex-col gap-1 md:gap-5 ps-5">
-                <button @click="category = label" class="bg-black py-5 px-2 text-center" v-for="label in labels" :key="label.labels">{{ label }}</button>
+                <button @click="(label) => changeCategory(label)" class="bg-black py-5 px-2 text-center" 
+                v-for="label in labels" :key="label.labels">{{ label }}</button>
             </div>
             <div v-for="(img, index) in images" :key="index" v-if="!category" class="bg-[rgb(249,238,223)] flex flex-row justify-around flex-auto pt-10 sm:pt-0 sm:gap-4">
                 <img :src="img.image" :alt="img.alternative">
@@ -37,7 +38,7 @@
 </template>
     
 <script>
-import { mapState } from 'pinia'
+import { mapState, mapActions } from 'pinia'
 import { useArtistStore } from '../stores/ArtistStore.js'
 import artist1 from '../assets/tattooArtistsImages/artist1.png';
 import artist2 from '../assets/tattooArtistsImages/artist2.png';
@@ -53,12 +54,14 @@ import Navbar from './Navbar.vue';
         methods: {
         updateBigImage(imageUrl) {
             this.bigImage = imageUrl;
-        }
+        },
+        ...mapActions(useArtistStore, ['changeCategory'])
   },
         computed: {
-         ...mapState(useArtistStore, ['artists'])
-        },
+         ...mapState(useArtistStore, ['artists', "category"])
 
+        },
+      
         data() {
         return {
           labels: ["JAPONES", "FLORAL", "ILUTRACIÓN", "MINIMAL", "PURE BLACK"],
@@ -67,7 +70,6 @@ import Navbar from './Navbar.vue';
           {image: artist3 , alternative: "male tattoo artist drawing on shoulder"}
           ],
           apiImages: [apiExample],
-          category: "",
           bigImage: ""
         }
     }

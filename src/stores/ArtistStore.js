@@ -12,12 +12,16 @@ export const useArtistStore = defineStore('ArtistStore', {
       
         
       ],
-      images: []
+      images: [],
+      category: ""
     }),
     getters: {
         
     },
     actions: {
+      changeCategory(category) {
+        this.category = category
+      },
       async getImages() {
         try {
           const response = await axios.get("/api/search", {
