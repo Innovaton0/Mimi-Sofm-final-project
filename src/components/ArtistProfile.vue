@@ -15,7 +15,7 @@
         <!-- IMAGEN DE TATUADOR -->
         <div class="flex flex-row flex-wrap gap-4 justify-center md:justify-start">
           <div class="border-b md:border-b-0 border-b-black pb-10 md:border-r md:border-r-black md:pr-20">
-            <p class="text-white bg-black text-2xl text-center font-semibold">Nicolás Kroft</p>
+            <p class="text-white bg-black text-2xl text-center font-semibold">{{artist.name}}</p>
 
             <div>
               <div class="items-center">
@@ -32,15 +32,7 @@
             <div class="mb-4">
               <h3 class="text-[#F09235] text-3xl font-bold">BIO</h3>
               <p class="text-sm w-80 font-light text-black">
-                Nicolás Kroft es un renombrado tatuador argentino nacido en Buenos
-                Aires en 1985. Desde joven mostró talento artístico, aprendiendo
-                dibujo y pintura de su abuelo. Comenzó como aprendiz en un estudio
-                de tatuajes y en 2010, abrió su propio estudio, Ink & Soul,
-                ganando reconocimiento por sus retratos. Nicolás ha ganado premios
-                en convenciones internacionales y es conocido por su atención al
-                detalle y su habilidad para crear diseños personalizados. También
-                es un defensor activo de la protección animal, organizando eventos
-                benéficos para apoyar refugios.
+              {{ artist.desc }}
               </p>
             </div>
 
@@ -78,17 +70,27 @@ import Navbar from './Navbar.vue';
 import Search from './Search.vue';
 import Footer from './Footer.vue';
 import axios from 'axios';
+import { mapState } from 'pinia'
+import { useArtistStore } from '../stores/ArtistStore.js'
 
 export default {
   name: 'App',
   components: { Navbar, Search, Footer },
+  computed: {
+    ...mapState(useArtistStore, ["artists"])
+  },
   data() {
     return {
       tattooArtistPhoto: '', // Para almacenar la imagen del tatuador
-      tattooPhotos: [] // Para almacenar las imágenes de tatuajes
+      tattooPhotos: [], // Para almacenar las imágenes de tatuajes
+      artist: {}
     };
   },
   methods: {
+    getArtistById() {
+      const artistId = this.$route.params.id
+      this.artist = this.artists.find((artist) => artist.id === artistId)
+    },
     async fetchTattooArtistPhoto() {
       try {
         const response = await axios.get('https://api.pexels.com/v1/search', {
@@ -132,6 +134,7 @@ export default {
     }
   },
   mounted() {
+    this.getArtistById();
     this.fetchTattooArtistPhoto(); 
     // Llama a la función al montar el componente
     

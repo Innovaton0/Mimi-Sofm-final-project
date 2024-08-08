@@ -6,9 +6,9 @@ export const useArtistStore = defineStore('ArtistStore', {
     state: () => ({
       key: "XkGd6JgK1qI30r2bIcuIbHz0wJzOpCPU8csyfDWp3X02K8m0xakAxFfV",
       artists: [
-        { name: faker.person.fullName(), desc: `${faker.person.bio()}. Dotwork artist` },
-        { name: faker.person.fullName(), desc: `${faker.person.bio()}. Tribal artist` },
-        { name: faker.person.fullName(), desc: `${faker.person.bio() }. Black work artist`},
+        { name: faker.person.fullName(), desc: `${faker.person.bio()}. Dotwork artist`,id: "1" },
+        { name: faker.person.fullName(), desc: `${faker.person.bio()}. Tribal artist`,id: "2" },
+        { name: faker.person.fullName(), desc: `${faker.person.bio()}. Black work artist`,id: "3"},
       
         
       ],
@@ -16,7 +16,11 @@ export const useArtistStore = defineStore('ArtistStore', {
       category: ""
     }),
     getters: {
+      getArtistById: (state) => {
+        console.log("Hola");
         
+        return (artistId) => state.artists.find((artist) => artist.id === artistId)
+      },
     },
     actions: {
       changeCategory(category) {

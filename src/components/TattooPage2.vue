@@ -46,7 +46,9 @@
       </div>
 
       <div class="flex flex-col items-center w-[21rem] px-2 justify-around border-l border-l-black">
-        <p class="text-center leading-2 text-lg md:text-xl lg:text-2xl">Conoce al <router-link to="/tattooartists/:id" class="font-bold text-[#F09235] hover:text-[#651c19]">artista</router-link> que hizo esta tatuaje</p>
+        <p class="text-center leading-2 text-lg md:text-xl lg:text-2xl">Conoce al 
+          <router-link :to="`/tattooartists/${getRandomId}`" class="font-bold text-[#F09235] hover:text-[#651c19]">artista
+          </router-link> que hizo esta tatuaje</p>
         <router-link to="/tattooartists/:id">
             <img
             src="../assets/Tatuajes Home/pexels-photo-1433273.png"
@@ -85,7 +87,13 @@ export default {
   },
 
   computed: {
-  ...mapState(useTattooStore, ['images'])
+  ...mapState(useTattooStore, ['images']),
+  getRandomId() {
+      const min = Math.ceil(1)
+      const max = Math.floor(3)
+
+      return Math.floor(Math.random()*(max-min)) +1
+    },
   },
 
   mounted() {
@@ -93,6 +101,7 @@ export default {
   },
 
   methods: {
+    
     fetchImages(query) {
       const tattooStore = useTattooStore();
       tattooStore.getTattooImages(query);
