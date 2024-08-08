@@ -28,7 +28,7 @@ export default {
   name: "Search",
   data() {
     return {
-      query: "",  // Texto de búsqueda ingresado por el usuario
+      query: "",  // Texto de búsqueda ingresado por el usuario "spanglish Nacha!"
       categories: [
         { name: "JAPONÉS", route: "/tattoo2" },
         { name: "FLORAL", route: "/tattoo2" },
