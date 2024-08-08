@@ -9,22 +9,10 @@
   </div>
   </header>
   <!-- Buttons -->
-  <div class="flex flex-wrap py-10 gap-2 justify-around"> 
-    <div>
-      <button @click="fetchImages('tattoos')" class="bg-black text-white text-sm w-36 py-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">JAPONES</button>
-    </div>
-    <div>
-      <button @click="fetchImages('tattooing')" class="bg-black text-white text-sm w-36 py-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">FLORAL</button>
-    </div>
-    <div>
-      <button @click="fetchImages('tattoing')" class="bg-black text-white text-sm w-36 py-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">ILUSTRACIONES</button>
-    </div>
-    <div>
-      <button @click="fetchImages('tattoo art')" class="bg-black text-white text-sm w-36 py-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">MINIMAL</button>
-    </div>
-    <div>
-      <button @click="fetchImages('tattoo')" class="bg-black text-white text-sm w-36 py-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">PURE BLACK</button>
-    </div>
+  <div class="flex flex-wrap py-10 gap-2 justify-around">
+    <button v-for="button in buttons" :key="button.query" @click="fetchImages(button.query)" class="bg-black text-white text-sm w-24 p-2 lg:text-base lg:w-48 lg:p-1 hover:bg-[#651c19] focus:bg-[#F09235]">
+      {{ button.label }}
+    </button>
   </div>
 
   <!-- Grid images -->
@@ -81,6 +69,13 @@ export default {
   data() {
     return {
       modalImage: "",
+      buttons: [
+        { label: "JAPONES", query: "tattoos" },
+        { label: "FLORAL", query: "tattooing" },
+        { label: "ILUSTRACIONES", query: "tattoing" },
+        { label: "MINIMAL", query: "tattoo art" },
+        { label: "PURE BLACK", query: "tattoo" }
+      ]
     };
   },
 
