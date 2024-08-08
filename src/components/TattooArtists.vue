@@ -10,27 +10,25 @@
             <img v-if="category" class="h-[66rem]" src="../assets/tattooArtistsImages/tattoo-artist-big.png" alt="">
         </div>
     </header>
-    <main class="bg-[#F9EEDF] min-h-screen">
+    <main class="bg-[#F9EEDF] h-screen">
         <section class="flex flex-row justify-around md:justify-normal flex-wrap pt-20">
             <div class="md:w-36 text-white flex flex-wrap justify-evenly md:flex-col gap-1 md:gap-5 ps-5">
-                <button @click="(label) => changeCategory(label)" class="bg-black py-5 px-2 text-center" 
-                v-for="label in labels" :key="label.labels">{{ label }}</button>
+                <button @click="category = label" class="bg-black py-5 px-2 text-center" v-for="label in labels" :key="label.labels">{{ label }}</button>
             </div>
             <div v-for="(img, index) in images" :key="index" v-if="!category" class="bg-[rgb(249,238,223)] flex flex-row justify-around flex-auto pt-10 sm:pt-0 sm:gap-4">
                 <img :src="img.image" :alt="img.alternative">
             </div>
 
-           <div v-if="category" class="flex flex-wrap w-[400px] ms-16">
-              <div v-for="(artist, index) in artists" @click="updateBigImage(artist.imageUrl)" :key="index" class="border-2 border-yellow-600">
-              <img :src="artist.imageUrl" :alt="artist.name" v-if="artist.imageUrl" />
-            </div>
+           <div v-if="category" class="flex gap-2 w-[600px] ms-16">
+              <div v-for="(artist, index) in artists" @click="updateBigImage(artist.imageUrl)" :key="index" class=""><img :src="artist.imageUrl" :alt="artist.name" v-if="artist.imageUrl" /></div>
            </div>
-
-           <div v-if="bigImage" class="border-2 border-purple-700 ms-32 w-[30rem]">
+           <div v-if="bigImage" class="ms-32 w-[30rem]">
             <img :src="bigImage" alt="">
-            <p> Si quieres saber más de mí: <router-link to="/tattooartists/:id" class="underline">Click Aquí</router-link></p>
+            <div class="flex flex-col bg-black text-white justify-center items-center pt-4">
+                <p class="text-xl">Nicolás Kroft - 10 años de experiencia</p>
+                <p> Si quieres saber más: <router-link to="/tattooartists/:id" class="font-bold px-2 text-[#F09235] hover:text-[#ffb66c] focus:text-[#ffb66c]"> Click Aquí </router-link></p>
            </div>
-
+        </div>
         </section>
     </main>
     <Footer>
@@ -38,7 +36,7 @@
 </template>
     
 <script>
-import { mapState, mapActions } from 'pinia'
+import { mapState } from 'pinia'
 import { useArtistStore } from '../stores/ArtistStore.js'
 import artist1 from '../assets/tattooArtistsImages/artist1.png';
 import artist2 from '../assets/tattooArtistsImages/artist2.png';
@@ -52,16 +50,14 @@ import Navbar from './Navbar.vue';
         name: "TattooArtists",
         components: { Search, Footer, Navbar },
         methods: {
-        updateBigImage(imageUrl) {
-            this.bigImage = imageUrl;
-        },
-        ...mapActions(useArtistStore, ['changeCategory'])
+    updateBigImage(imageUrl) {
+      this.bigImage = imageUrl;
+    }
   },
         computed: {
-         ...mapState(useArtistStore, ['artists', "category"])
-
+         ...mapState(useArtistStore, ['artists'])
         },
-      
+
         data() {
         return {
           labels: ["JAPONES", "FLORAL", "ILUTRACIÓN", "MINIMAL", "PURE BLACK"],
@@ -70,6 +66,7 @@ import Navbar from './Navbar.vue';
           {image: artist3 , alternative: "male tattoo artist drawing on shoulder"}
           ],
           apiImages: [apiExample],
+          category: "",
           bigImage: ""
         }
     }

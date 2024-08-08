@@ -96,7 +96,6 @@ export default {
   },
 
   methods: {
-    
     fetchImages(query) {
       const tattooStore = useTattooStore();
       tattooStore.getTattooImages(query);

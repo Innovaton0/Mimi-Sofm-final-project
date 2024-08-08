@@ -36,7 +36,7 @@ export const useArtistStore = defineStore('ArtistStore', {
             },
             params: {
               query: "tattoo artist",
-              per_page: 20,
+              per_page: 40,
             },
           });
           this.images = response.data.photos;
