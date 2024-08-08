@@ -3,21 +3,21 @@
         <Navbar class="col-start-1 col-end-4 row-start-1 mt-5"></Navbar>
 
         <div class="col-start-1 col-end-4 md:col-end-3 row-start-2 flex items-start lg:items-end mx-5 lg:ms-20 z-10 translate-y-6">
-            <Search></Search>
+            <Search class="w-full"></Search>
         </div>
         <div class="col-start-2 lg:col-start-3 col-end-4 row-start-1 row-end-3 flex justify-end">
             <img v-if="!category" class="w-[30rem] h-[30rem] -translate-y-32" src="../assets/tattooArtistsImages/tattoo-tool2.png" alt="tattoo-tool">
-            <img v-if="category" class="h-[66rem]" src="../assets/tattooArtistsImages/tattoo-artist-big.png" alt="">
+            <img v-if="category" class="h-[66rem]" src="../assets/bg-image-ornament-full.png" alt="">
         </div>
     </header>
 
     
-    <main class="bg-[#F9EEDF] min-h-screen">
-        <section class="flex flex-row justify-around md:justify-normal flex-wrap pt-20">
+    <main class="bg-[#F9EEDF] min-h-[80vh]">
+        <section class="mb-2 flex flex-row ms-4 lg:justify-normal flex-wrap pt-20">
 
             <!-- BOTONES -->
-            <div class="max-h-[30rem] md:w-36 text-white flex flex-wrap justify-evenly md:flex-col gap-1 md:gap-5 ps-5">
-                <button @click="(label) => changeCategory(label)" class="bg-black hover:bg-[#F09235] py-5 px-2 text-center" 
+            <div class="z-10 max-h-[30rem] text-white flex flex-wrap justify-evenly lg:flex-col gap-1 lg:gap-5 xl:ps-5">
+                <button @click="(label) => changeCategory(label)" class="bg-black hover:bg-[#F09235] h-12 px-2 text-center" 
                 v-for="label in labels" :key="label.labels">{{ label }}</button>
             </div>
 
@@ -27,16 +27,16 @@
             </div>
 
             <!-- GRID IMAGES -->
-           <div v-if="category" class="w-[30rem] gap-2 flex flex-wrap ms-16">
+           <div v-if="category" class="md:w-[30rem] xl:w-[40rem] gap-2 flex flex-col md:flex-row flex-wrap md:mt-2 mt-20 lg:ms-10">
               <div v-for="(artist, index) in artists" @click="updateBigImage(artist.imageUrl)" :key="index">
-              <img class="w-40 h-40" :src="artist.imageUrl" :alt="artist.name" v-if="artist.imageUrl" />
+              <img class="w-32 h-32 md:w-40 md:h-40" :src="artist.imageUrl" :alt="artist.name" v-if="artist.imageUrl" />
             </div>
            </div>
 
            <!-- bigimage -->
-           <div v-if="bigImage" class="ms-5 w-[30rem]">
-            <img :src="bigImage" alt="">
-            <p> Si quieres saber más de mí: <router-link :to="`/tattooartists/${getRandomId}`" class="underline">Click Aquí</router-link></p>
+           <div v-if="bigImage" class="fixed ms-5 w-[20rem] lg:w-[30rem] flex flex-col translate-x-28  -translate-y-28 lg:-translate-y-0 sm:translate-x-[10rem] md:translate-x-[22rem] lg:translate-x-[30rem] xl:translate-x-[45rem]">
+            <img class="w-full h-80" :src="bigImage" alt="">
+            <p class="bg-black p-4 text-white"> Si quieres saber más de mí: <router-link :to="`/tattooartists/${getRandomId}`" class="underline text-[#F09235]">Click Aquí</router-link></p>
             
            </div>
 
