@@ -102,10 +102,10 @@
 
             <!-- Botón de envío -->
             <div class="mt-6">
-                <button type="submit"
+                <router-link to="/thanks"><button type="submit"
                     class=" bg-[#F09235] text-white font-bold py-2 px-4 w-[27rem] lg:w-[35rem] rounded-lg text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 focus:ring-[#F09235] focus:ring-offset-2 focus:ring-offset-white">
                     Enviar
-                </button>
+                </button></router-link>
             </div>
 
         </form>

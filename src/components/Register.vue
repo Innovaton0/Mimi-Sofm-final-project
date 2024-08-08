@@ -1,6 +1,7 @@
 <template>
     
   <Navbar></Navbar>
+ 
 <section class="bg-[#F9EEDF] h-[100vh] font-mont text-black flex items-center justify-center"> 
     
     <!-- GRID -->
@@ -46,8 +47,8 @@
             </div>
 
             <div class="mt-6">
-                <button type="submit" class="bg-[#F09235] text-white font-bold w-[500px] py-2 px-6 rounded-xl text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 uppercase">pago
-                </button>
+                <router-link to="/thanks"><button type="submit" class="bg-[#F09235] text-white font-bold w-[500px] py-2 px-6 rounded-xl text-sm hover:bg-[#8A312E] focus:outline-none focus:ring-2 uppercase">pago
+                </button></router-link>
             </div>
         </form>
       </div>
@@ -61,12 +62,14 @@
 <script>
 import Navbar from './Navbar.vue';
 import Footer from './Footer.vue';
+import ThankYou from './ThankYou.vue';
     export default {
     name: "Register",
-    components: {Navbar, Footer},
+    components: {Navbar, Footer, ThankYou },
     data() {
       return {
-      imageUrl: null
+      imageUrl: null,
+     
     };
   },
   methods: {

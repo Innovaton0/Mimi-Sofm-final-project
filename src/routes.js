@@ -9,6 +9,7 @@ import Register from './components/Register.vue';
 import Help from './components/Help.vue';
 import AboutUs from './components/AboutUs.vue';
 import NotFound from './components/NotFound.vue';
+import ThankYou from "./components/ThankYou.vue";
 
 
 export const routes = [
@@ -22,5 +23,6 @@ export const routes = [
   { path: "/register", name: "register", component: Register},
   { path: "/help", name: "help", component: Help },
   { path: "/Us", name: "us", component: AboutUs },
+  { path: "/thanks", name: "thanks", component: ThankYou },
   { path: "/:path(.*)", component: NotFound } 
 ];
