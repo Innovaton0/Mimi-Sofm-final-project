@@ -1,6 +1,6 @@
 <template>
 
-  <main class=" grid grid-cols-3 grid-rows-3 max-h-[98vh]">
+  <main class=" grid grid-cols-3 grid-rows-3 h-[150vh]">
     <div class="col-start-1 col-end-4 row-start-1 row-end-1 z-20">
     <Navbar></Navbar>
   </div>

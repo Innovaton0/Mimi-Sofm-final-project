@@ -85,7 +85,7 @@ export default {
   ...mapState(useTattooStore, ['images']),
   getRandomId() {
       const min = Math.ceil(1)
-      const max = Math.floor(3)
+      const max = Math.floor(30)
 
       return Math.floor(Math.random()*(max-min)) +1
     },
