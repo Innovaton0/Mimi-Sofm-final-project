@@ -3,7 +3,7 @@
         <div :style="bgColor" class="bg-black text-white align-bottom h-16 -me-2 sm:-me-4 flex-auto flex items-center ps-2 sm:ps-8">
             <button @click="select = !select " class="after:content-['▼'] after:text-[#F09235] after:font-bold after:ps">
                 ¿Qué buscas?
-                <div :style="bgColor" class="bg-black absolute p-5 flex flex-col gap-2" v-if="select">
+                <div :style="bgColor" class="bg-black absolute p-5 flex flex-col gap-3 mt-5" v-if="select">
                     <router-link to="/tattoo">Tatuajes</router-link>
                     <router-link to="/tattooartists">Tatuadores</router-link>
                 </div>
