@@ -37,7 +37,7 @@
     <Footer>
     </Footer>
 </template>
-    
+
 <script>
 import { mapState, mapActions } from 'pinia'
 import { useArtistStore } from '../stores/ArtistStore.js'
