@@ -28,7 +28,8 @@
 
            <div v-if="bigImage" class="border-2 border-purple-700 ms-32 w-[30rem]">
             <img :src="bigImage" alt="">
-            <p> Si quieres saber más de mí: <router-link to="/tattooartists/:id" class="underline">Click Aquí</router-link></p>
+            <p> Si quieres saber más de mí: <router-link :to="`/tattooartists/${getRandomId}`" class="underline">Click Aquí</router-link></p>
+            
            </div>
 
         </section>
@@ -52,16 +53,30 @@ import Navbar from './Navbar.vue';
         name: "TattooArtists",
         components: { Search, Footer, Navbar },
         methods: {
+            fetchImages(query) {
+      const tattooStore = useTattooStore(); 
+
+      tattooStore.getTattooImages(query); },
+      
         updateBigImage(imageUrl) {
             this.bigImage = imageUrl;
         },
         ...mapActions(useArtistStore, ['changeCategory'])
   },
         computed: {
-         ...mapState(useArtistStore, ['artists', "category"])
+         ...mapState(useArtistStore, ['artists', "category", 'images']),
+         
+        getRandomId() {
+            const min = Math.ceil(1)
+             const max = Math.floor(3)
+
+      return Math.floor(Math.random()*(max-min)) +1
+    },
 
         },
       
+
+        
         data() {
         return {
           labels: ["JAPONES", "FLORAL", "ILUTRACIÓN", "MINIMAL", "PURE BLACK"],
